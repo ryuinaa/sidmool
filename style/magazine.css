@@ -56,6 +56,10 @@
     width: 100%;
     height: auto;
 }
+.mag_wrap {
+    height: 1900px;
+    margin-bottom: 30px; 
+}
 .mag_wrap li {
     width: 300px;
     height: 420px;
@@ -79,9 +83,11 @@
 /* ==================== */
 /* 하단 버튼 */
 .page_button {
+    clear: both;
     width: 70%;
-    height: auto;
     text-align: center;
+    margin-bottom: 50px;
+    /* margin-top: 30px; */
 }
 .page_button .numb {
     width: 32px;
@@ -96,4 +102,25 @@
 .page_button .b_active {
     color: #f2f2f2;
     background-color: #4B816A;
+}
+.page_button .flbtn{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #353B3B;
+    color: #f2f2f2;
+    background-color: #353B3B;
+    border-radius: 5px;
+}
+.page_button .pre_nextbtn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #353B3B;
+    border-radius: 5px;
+}
+.page_button .flbtn:active {
+    opacity: 0.8;
+}
+.page_button .pre_nextbtn:active {
+    background-color: #353B3B;
+    opacity: 0.8;
 }
