@@ -57,15 +57,15 @@
     height: auto;
 }
 .mag_wrap {
+    width: 100%;
     height: 1900px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 .mag_wrap li {
-    width: 300px;
-    height: 420px;
-    background-color: lightgrey;
+    width: 250px;
+    height: 380px;
     float: left;
-    margin: 30px 16px;
+    margin: 30px 41px;
     text-align: center;
     font-size: 18px;
 }
@@ -75,8 +75,8 @@
 }
 
 .mag_wrap li img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: honeydew;
 }
 
