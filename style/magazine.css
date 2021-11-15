@@ -119,6 +119,7 @@
 .page_button .pre_nextbtn {
     width: 32px;
     height: 32px;
+    margin: 0 5px;
     border: 1px solid #353B3B;
     border-radius: 5px;
 }
@@ -126,6 +127,6 @@
     opacity: 0.8;
 }
 .page_button .pre_nextbtn:active {
-    background-color: #353B3B;
+    background-color: #dfdbdb;
     opacity: 0.8;
 }
