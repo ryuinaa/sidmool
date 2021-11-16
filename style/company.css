@@ -46,10 +46,50 @@
 
 
 /* ============== */
-/* 헤드라인 영역 */
-.headline {
+/* 컨텐츠 영역 */
+.contents {
+    width: 100%;
+    height: auto;
     text-align: center;
+}
+.headline {
     clear: left;
-    background-color: antiquewhite;
-    margin-top: 30px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 24px;
+}
+.headline span {
+    color: #4B816A;
+}
+
+.images {
+    margin-top: 20px;
+    text-align: center;
+}
+.images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.images li {
+    width: 500px;
+    float: left;
+}
+
+.text{
+    text-align: center;
+}
+.text h4 {
+    clear: left;
+    padding-top: 50px;
+    font-size: 20px;
+}
+.text p {
+    margin-top: 20px;
+}
+.text h3 {
+    margin-top: 50px;
+    font-size: 24px;
 }
