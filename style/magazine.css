@@ -82,7 +82,6 @@
     width: 250px;
     height: 250px;
     margin-bottom: 10px;
-    background-color: honeydew;
 }
 
 /* ==================== */
@@ -92,7 +91,13 @@
     width: 70%;
     text-align: center;
     margin-bottom: 50px;
-    /* margin-top: 30px; */
+    /* background-color: #aaa; */
+}
+.page_button img {
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    /* margin-top: 3px; */
 }
 .page_button .numb {
     width: 32px;
@@ -101,6 +106,7 @@
     border-radius: 5px;
 }
 .page_button .numb:active {
+    border: none;
     background-color: #4B816A;
     opacity: 0.8;
 }
@@ -119,7 +125,6 @@
 .page_button .pre_nextbtn {
     width: 32px;
     height: 32px;
-    margin: 0 5px;
     border: 1px solid #353B3B;
     border-radius: 5px;
 }
@@ -129,4 +134,42 @@
 .page_button .pre_nextbtn:active {
     background-color: #dfdbdb;
     opacity: 0.8;
+}
+
+
+@media all and (max-width:1024px) {
+    .wrap {
+        width: 768px;
+    }
+
+    .headline {
+        margin-top: 30px;
+    }
+    .headline h2 {
+        font-size: 24px;
+    }
+    .headline h4 {
+        margin-top: 10px;
+        font-size: 18px;
+        color: #4B816A;
+    }
+    .headline p {
+        margin-top: 20px;
+    }
+    .mag_wrap {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .mag_wrap li{
+        width: 200px;
+        height: 300px;
+        margin: 10px 28px;
+        font-size: 14px;
+    }
+    .mag_wrap li img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
 }
