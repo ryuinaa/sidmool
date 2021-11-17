@@ -9,11 +9,39 @@
     <!--favicon영역-->
     <title>시드물(SIDMOOL) - 피부의 고향</title>
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <script src="scrpit/jquery.min.js"></script>
     <script src="scrpit/script.js"></script>
     <script src="https://kit.fontawesome.com/13d0944c7e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="slide_tab">
+        <div class="tab_wrap">
+            <div class="tab_hd">
+                <a href="#"><img src="images/logo01.jpg" alt="logo"></a>
+            </div>
+            <div class="tab_body">
+
+            </div>
+            <div class="tab_ft">
+
+            </div>
+        </div>
+        <div class="slide_btn">
+            <div class="s_btn">
+                <a href="#" class="open"><i class="fas fa-chevron-left"></i></a>
+                <!-- <a href="#" class="close"><i class="fas fa-chevron-right"></i></a> -->
+            </div>
+            <div class="s_btn"><a href="#"><img src="images/KakaoTalk_20211115_113601211.png"></a></div>
+            <div class="s_btn"><a href="#"></a><img src="images/KakaoTalk_20211115_113656181.png"></a></div>
+            <div class="s_btn"><a href="#">5</a></div>
+            <div class="s_btn"><a href="#">6</a></div>
+            <div class="s_btn"><a href="#">7</a></div>
+            <div class="s_btn"><a href="#">8</a></div>
+        </div>
+    </div>
+
     <header>
         <div class="tnb">
             <nav>
@@ -33,12 +61,105 @@
                     <a href="#"><img src="images/top_logo11.png" alt="logo"></a>
                 </div>
                 <ul>
-                    <li><a href="#">제품전체보기</a></li>
-                    <li><a href="#">시드물소개</a></li>
-                    <li><a href="#">제품가이드</a></li>
-                    <li><a href="#">사용후기</a></li>
-                    <li><a href="#">시드물소식</a></li>
-                    <li><a href="#">시드물통신</a></li>
+                    <li class="hover"><a href="#">제품전체보기</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_wrap_wh">
+                                <div class="menu_left">
+                                    <a href="#">기능별</a>
+                                    <a href="#">성분라인별</a>
+                                    <a href="#">고민별</a>
+                                    <a href="#">내츄럴 99</a>
+                                </div>
+                                <div class="menu_right">
+                                    <div class="m_r_1">
+                                        <a href="#">기초화장</a>
+                                        <a href="#">바디</a>
+                                        <a href="#">헤어</a>
+                                        <a href="#">화장소품</a>
+                                        <a href="#">건강식품</a>
+                                        <a href="#">유아&청소년 추천</a>
+                                        <a href="#">색조</a>
+                                    </div>
+                                    <div class="m_r_2">
+                                        <a href="#">무오일다당류</a>
+                                        <a href="#">무오일 다당류</a>
+                                        <a href="#">알로에</a>
+                                        <a href="#">봉독</a>
+                                        <a href="#">바하</a>
+                                        <a href="#">아하</a>
+                                        <a href="#">녹차(EGCG)</a>
+                                        <a href="#">카렌듈라</a>
+                                        <a href="#">아크바이</a>
+                                        <a href="#">레드큐어</a>
+                                        <a href="#">천연오일</a>
+                                        <a href="#">메가펩타이드</a>
+                                        <a href="#">콜라겐</a>
+                                        <a href="#">호호바</a>
+                                        <a href="#">휴먼올리고</a>
+                                        <a href="#">뷰리즈</a>
+                                        <a href="#">EGF</a>
+                                        <a href="#">프로폴리스</a>
+                                        <a href="#">히아루론산</a>
+                                        <a href="#">세라마이드</a>
+                                        <a href="#">티트리</a>
+                                        <a href="#">아스타잔틴</a>
+                                        <a href="#">사카로발효</a>
+                                        <a href="#">닥터트럽</a>
+                                        <a href="#">병풀(센텔라)</a>
+                                        <a href="#">징크</a>
+                                        <a href="#">동백</a>
+                                        <a href="#">스킨소스</a>
+                                        <a href="#">판테놀</a>
+                                        <a href="#">닥터갈라톡</a>
+                                        <a href="#">달팽이</a>
+                                    </div>
+                                    <div class="m_r_3">
+                                        <a href="#">AC스팟</a>
+                                        <a href="#">바디케어</a>
+                                        <a href="#">모공관리</a>
+                                        <a href="#">피지관리</a>
+                                        <a href="#">장벽강화</a>
+                                        <a href="#">각질관리</a>
+                                        <a href="#">트럽</a>
+                                        <a href="#">악건성</a>
+                                        <a href="#">붉은톤</a>
+                                        <a href="#">미백</a>
+                                        <a href="#">자외선차단</a>
+                                        <a href="#">주름개선&탄력</a>
+                                        <a href="#">속건성(수부지)</a>
+                                        <a href="#">화이트/블랙헤드 관리</a>
+                                        <a href="#">건조&민감피부</a>
+                                        <a href="#">안티옥시</a>
+                                        <a href="#">탈모</a>
+                                        <a href="#">레이저관리</a>
+                                        <a href="#">탄력집중관리</a>
+                                        <a href="#">시카케어</a>
+                                        <a href="#">동물성프리</a>
+                                        <a href="#">미백&주름개선</a>
+                                    </div>
+                                    <div class="m_r_4">
+                                        <a href="#">클렌징</a>
+                                        <a href="#">퍼스트에센스</a>
+                                        <a href="#">스킨토너미스트</a>
+                                        <a href="#">앰플</a>
+                                        <a href="#">에센스세럼</a>
+                                        <a href="#">수분젤로션</a>
+                                        <a href="#">크림</a>
+                                        <a href="#">립&아이</a>
+                                        <a href="#">페이스&바디오일</a>
+                                        <a href="#">마스크팩</a>
+                                        <a href="#">바디&헤어</a>
+                                        <a href="#">자외선차단</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hover"><a href="#">시드물소개</a></li>
+                    <li class="hover"><a href="#">제품가이드</a></li>
+                    <li class="hover"><a href="#">사용후기</a></li>
+                    <li class="hover"><a href="#">시드물소식</a></li>
                 </ul>
                 <!--검색창 영역-->
                 <div class="search">
@@ -52,23 +173,30 @@
             </nav>
         </div>
 
-        <div class="imgslide">
-            <img src="images/testt.png" alt="imgslide">
-        </div>
 
     </header>
 
+    
+
     <div class="wrap">
+
+        <div class="imgslide">
+            <ul class="slide">
+                <li><img src="images/imgslide1.png"></li>
+                <li><img src="images/imgslide1.png"></li>
+                <li><img src="images/imgslide1.png"></li>
+            </ul>
+        </div>
 
         <section class="item1">
             <h1><a href="#">인기상품</a></h1>
             <div class="item1_wrap">
                 <ul>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="images/new (1).gif" alt="product"></a></li>
+                    <li><a href="#"><img src="images/new (1).jpg" alt="product"></a></li>
+                    <li><a href="#"><img src="images/new (2).jpg" alt="product"></a></li>
+                    <li><a href="#"><img src="images/new (3).jpg" alt="product"></a></li>
+                    <li><a href="#"><img src="images/new (5).jpg" alt="product"></a></li>
                 </ul>
             </div>
         </section>
@@ -79,16 +207,16 @@
             <h2><a href="#">신상품</a></h2>
             <div class="item2_wrap">
                 <ul>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="images/img (17).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (18).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (19).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (20).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (21).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (22).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (23).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (24).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (25).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (39).jpg" alt="new"></a></li>
                 </ul>
             </div>
         </section>
@@ -97,16 +225,16 @@
             <h2><a href="#">추천상품</a></h2>
             <div class="item3_wrap">
                 <ul>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="images/img (17).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (18).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (19).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (20).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (21).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (22).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (23).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (24).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (25).jpg" alt="new"></a></li>
+                    <li><a href="#"><img src="images/img (39).jpg" alt="new"></a></li>
                 </ul>
             </div>
         </section>
@@ -132,8 +260,8 @@
             <h1><a href="#">시드물 이벤트</a></h1>
             <div class="item5_wrap">
                 <ul>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
+                    <li><a href="#"><img src="images/evt_1.png" alt="event"></a></li>
+                    <li><a href="#"><img src="images/evt_2.png" alt="event"></a></li>
                 </ul>
             </div>
         </section>
@@ -165,7 +293,7 @@
 
 
 
-        
+
         <div class="notice_wrap">
             <h2><a href="#">공지사항</a></h2>
             <a href="#" class="notice_title">서비스 이용 안내 공지<p class="date">00/00</p></a>
@@ -205,28 +333,27 @@
                     <li><a href="#">사업자정보확인</a></li>
                 </ul>
                 <div class="ft2_middle">
-                    <!-- <h3>룰루랄라</h3> -->
-                    <p>상호: 주식회사 시드물	주소 : 우)35083 대전광역시 중구 안영로 42(안영동)	전화 : 1577-9638(해외 : +82-42-716-0277) 팩스 : 042-367-7989
-                        사업자등록번호 : 305-81-94469	건강기능식품판매업 : 대전 중구 제 503	통신판매업신고번호 : 제2008-대전중구-0247호	화장품제조판매업 등록필증 제 1163호
-                        서비스개선 : help@sidmool.com	대표 : 민중기	개인정보책임자 : 박소진</p>
+                    <p>상호: 주식회사 시드물 주소 : 우)35083 대전광역시 중구 안영로 42 (안영동) 전화 : 1577-9638 (해외 : +82-42-716-0277) 팩스 :
+                        042-367-7989
+                        사업자등록번호 : 305-81-94469 건강기능식품판매업 : 대전 중구 제 503 통신판매업신고번호 : 제2008-대전중구-0247호 화장품제조판매업 등록필증 제
+                        1163호
+                        서비스개선 : help@sidmool.com 대표 : 민중기 개인정보책임자 : 박소진</p>
                 </div>
                 <div class="ft2_bottom">
-                    <p>COPYRIGHT (C) 2008 <a href="#">SIDMOOL</a> ALL RIGHTS RESERVED	Hosting by MakeShop</p>
+                    <p>COPYRIGHT (C) 2008 <a href="#">SIDMOOL</a> ALL RIGHTS RESERVED Hosting by MakeShop</p>
                 </div>
             </div>
             <a href="#" class="topbtn">top</a>
             <div class="ft3">
                 <img src="images/qr.png">
             </div>
-            
+
         </div>
-        
+
     </footer>
 
-    <slide>
-        
-    </slide>
     
+
 </body>
 
 </html>
