@@ -16,31 +16,19 @@
 </head>
 
 <body>
-    <div class="slide_tab">
-        <div class="tab_wrap">
-            <div class="tab_hd">
-                <a href="#"><img src="images/logo01.jpg" alt="logo"></a>
-            </div>
-            <div class="tab_body">
-
-            </div>
-            <div class="tab_ft">
-
-            </div>
-        </div>
-        <div class="slide_btn">
-            <div class="s_btn">
-                <a href="#" class="open"><i class="fas fa-chevron-left"></i></a>
-                <!-- <a href="#" class="close"><i class="fas fa-chevron-right"></i></a> -->
-            </div>
-            <div class="s_btn"><a href="#"><img src="images/KakaoTalk_20211115_113601211.png"></a></div>
-            <div class="s_btn"><a href="#"></a><img src="images/KakaoTalk_20211115_113656181.png"></a></div>
-            <div class="s_btn"><a href="#">5</a></div>
-            <div class="s_btn"><a href="#">6</a></div>
-            <div class="s_btn"><a href="#">7</a></div>
-            <div class="s_btn"><a href="#">8</a></div>
+    <div id="side">
+        <div class="side-wrap">
+            이건 사이드
+            <button id="in-out">
+                <div class="fa-layer">
+                    <i class="fas fa-chevron-right blind"></i>
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </button>
+            <p>내용나옴</p>
         </div>
     </div>
+
 
     <header>
         <div class="tnb">
@@ -82,7 +70,6 @@
                                     </div>
                                     <div class="m_r_2">
                                         <a href="#">무오일다당류</a>
-                                        <a href="#">무오일 다당류</a>
                                         <a href="#">알로에</a>
                                         <a href="#">봉독</a>
                                         <a href="#">바하</a>
@@ -179,20 +166,40 @@
     
 
     <div class="wrap">
-
-        <div class="imgslide">
-            <ul class="slide">
-                <li><a href="#"><img src="images/imgslide1.png"></a></li>
-                <li><a href="#"><img src="images/imgslide1.png"></a></li>
-                <li><a href="#"><img src="images/imgslide1.png"></a></li>
-            </ul>
+        <!--이미지 슬라이더 실험-->
+    <div class="slider-1">
+        <div class="slides">
+            <div class="active" style="background-image:url(images/imgslide1.png);"></div>
+            <div style="background-image:url(images/imgslide2.png);"></div>
+            <div style="background-image:url(images/imgslide3.png);"></div>
+            <div style="background-image:url(images/imgslide4.png);"></div>
         </div>
-
+        <div class="page-btns">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="side-btns">
+            <div>
+                <span><i class="fas fa-angle-left" style="padding-left:10.5px;"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-angle-right" style="padding-left:13px;"></i></i></span>
+            </div>
+        </div>
+    </div>
+    <!--이미지 슬라이더 실험 끝-->
         <section class="item1">
             <h1><a href="#">인기상품</a></h1>
             <div class="item1_wrap">
                 <ul>
-                    <li><a href="#"><img src="images/new (1).gif" alt="product"></a></li>
+                    <li>
+                        <a href="#">
+                        <img src="images/new (1).gif" alt="product">
+                        <p>닥터트럽 립앤아이 리무버 100ml</p>
+                    </a>
+                </li>
                     <li><a href="#"><img src="images/new (1).jpg" alt="product"></a></li>
                     <li><a href="#"><img src="images/new (2).jpg" alt="product"></a></li>
                     <li><a href="#"><img src="images/new (3).jpg" alt="product"></a></li>
@@ -241,13 +248,29 @@
         <!--Tab으로 만들 영역 끝-->
 
 
-        <div class="adimg">
-            <ul class="adimg_slide">
-                <li><a href="#"><img src="images/adimg (1).jpg"></a></li>
-                <li><a href="#"><img src="images/adimg (1).png"></a></li>
-                <li><a href="#"><img src="images/adimg (2).png"></a></li>
-            </ul>
+        <!--이미지 슬라이더 실험-->
+    <div class="slider-1">
+        <div class="slides">
+            <div class="active" style="background-image:url(images/adimg (1).jpg);"></div>
+            <div style="background-image:url(images/adimg (1).jpg);"></div>
+            <div style="background-image:url(images/adimg (1).jpg);"></div>
         </div>
+        <div class="page-btns">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="side-btns">
+            <div>
+                <span><i class="fas fa-angle-left" style="padding-left:10.5px;"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-angle-right" style="padding-left:13px;"></i></i></span>
+            </div>
+        </div>
+    </div>
+    <!--이미지 슬라이더 실험 끝-->
 
         <section class="item4">
             <h1><a href="#">시드물이 추천하는 솔루션</a></h1>
@@ -304,11 +327,6 @@
             <a href="#" class="notice_title">시드물 사용후기 리뷰 이벤트<p class="date">00/00</p></a>
         </div>
 
-
-
-        <!-- <div class="bottom_banner">
-            <img src="images/bottom_banner1.jpg">
-        </div> -->
     </div>
 
 
@@ -336,14 +354,19 @@
                     <p>COPYRIGHT (C) 2008 <a href="#">SIDMOOL</a> ALL RIGHTS RESERVED Hosting by MakeShop</p>
                 </div>
             </div>
-            <a href="#" class="topbtn">top</a>
+            
             <div class="ft3">
                 <img src="images/qr.png">
             </div>
 
         </div>
-
+        <a href="#" class="topbtn">top</a>
     </footer>
+
+
+
+
+    
 
     
 
