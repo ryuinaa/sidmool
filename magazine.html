@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/magazine.css">
     <script src="script/jquery.min.js"></script>
-    <script src="scrpit/script.js"></script>
+    <script src="script/m_script.js"></script>
     <script src="https://kit.fontawesome.com/13d0944c7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -52,94 +52,100 @@
 
     <div class="wrap">
         <div class="m_lnb">
-            <ul>
-                <li class="active"><a href="#">나눔 소식</a></li>
-                <li><a href="#">축하 소식</a></li>
-                <li><a href="#">행사 소식</a></li>
-                <li><a href="#">시드물은 지금</a></li>
+            <ul class="tab_btn">
+                <li class="tab1 active"><a href="#">나눔 소식</a></li>
+                <li class="tab2"><a href="#">축하 소식</a></li>
+                <li class="tab3"><a href="#">행사 소식</a></li>
+                <li class="tab4"><a href="#">시드물은 지금</a></li>
             </ul>
         </div>
-        <div class="headline">
-            <h2>시드물 소식</h2>
-            <h4>나눔 소식</h4>
-            <p>모두가 행복한 세상을 위한 활동을 담았습니다</p>
-        </div>
         <div class="contents">
-            <div class="mag_wrap">
-                <ul>
-                    <li><a href="#">
-                            <img src="images/mini__20210419.jpg" alt="게시물1">
-                            금산 하늘꿈교실 지역 아동센터 후원 협약식에 다녀왔어요<br><span>2021.04.19</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__성락복지관.jpg" alt="게시물2">
-                            시드물과 함께하는 성락복지관 도서 나눔 캠페인<br><span>2019.06.21</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__아름다운가게_6주년.jpg" alt="게시물3">
-                            아름다운가게 중리점 6주년 행사에 다녀왔어요<br><span>2019.04.08</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__한끼100원.jpeg" alt="게시물4">
-                            '한끼 100원 나눔운동'과 함께하는 시드물!<br><span>2019.01.04</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__후원자의날.jpeg" alt="게시물5">
-                            대전 노인복지관 '후원자의날' 감사장 받았어요~^^<br><span>2018.12.05</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__20181203120006.jpg" alt="게시물6">
-                            대전노인복지관 김장 봉사활동 다녀왔어요<br><span>2018.12.03</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini_animals.jpg" alt="게시물7">
-                            동물들을 위한 사료나눔 봉사활동 일지<br><span>2018.11.10</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__20180813180406.jpg" alt="게시물8">
-                            대전광역시 노인복지관 어르신분들께 드리는 작은 나눔<br><span>2018.08.13</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__아름다운가게.jpg" alt="게시물9">
-                            아름다운가게와 함께하는 시드물<br><span>2018.06.25</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini_sharing_power.jpg" alt="게시물10">
-                            시드물과 함께 힘을 나누는 사람들<br><span>2017.10.17</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini__20200616103923.jpg" alt="게시물11">
-                            2016 새해맞이 시드물의 '아름다운 하루'<br><span>2016.06.16</span>
-                        </a>
-                    </li>
-                    <li><a href="#">
-                            <img src="images/mini_sharing_total.jpg" alt="게시물12">
-                            2015년 시드물 나눔활동 총결산<br><span>2015.12.28</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="page_button">
-                <button type="button" class="flbtn"><img src="images/dleft_arrow.png"></button>
-                <button type="button" class="pre_nextbtn"><img src="images/left_arrow.png"></button>
-                <button type="button" class="numb b_active">1</button>
-                <button type="button" class="numb">2</button>
-                <button type="button" class="numb">3</button>
-                <button type="button" class="numb">4</button>
-                <button type="button" class="numb">5</button>
-                <button type="button" class="pre_nextbtn"><img src="images/right_arrow.png"></button>
-                <button type="button" class="flbtn"><img src="images/dright_arrow.png"></button>
-            </div>
+            <ul class="tab_content active">
+                <div class="headline">
+                    <h2>시드물 소식</h2>
+                    <h4>나눔 소식</h4>
+                    <p>모두가 행복한 세상을 위한 활동을 담았습니다</p>
+                </div>
+                <div class="mag_wrap">
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/mini__20210419.jpg" alt="게시물1">
+                                금산 하늘꿈교실 지역 아동센터 후원 협약식에 다녀왔어요<br><span>2021.04.19</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__성락복지관.jpg" alt="게시물2">
+                                시드물과 함께하는 성락복지관 도서 나눔 캠페인<br><span>2019.06.21</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__아름다운가게_6주년.jpg" alt="게시물3">
+                                아름다운가게 중리점 6주년 행사에 다녀왔어요<br><span>2019.04.08</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__한끼100원.jpeg" alt="게시물4">
+                                '한끼 100원 나눔운동'과 함께하는 시드물!<br><span>2019.01.04</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__후원자의날.jpeg" alt="게시물5">
+                                대전 노인복지관 '후원자의날' 감사장 받았어요~^^<br><span>2018.12.05</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__20181203120006.jpg" alt="게시물6">
+                                대전노인복지관 김장 봉사활동 다녀왔어요<br><span>2018.12.03</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini_animals.jpg" alt="게시물7">
+                                동물들을 위한 사료나눔 봉사활동 일지<br><span>2018.11.10</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__20180813180406.jpg" alt="게시물8">
+                                대전광역시 노인복지관 어르신분들께 드리는 작은 나눔<br><span>2018.08.13</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__아름다운가게.jpg" alt="게시물9">
+                                아름다운가게와 함께하는 시드물<br><span>2018.06.25</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini_sharing_power.jpg" alt="게시물10">
+                                시드물과 함께 힘을 나누는 사람들<br><span>2017.10.17</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini__20200616103923.jpg" alt="게시물11">
+                                2016 새해맞이 시드물의 '아름다운 하루'<br><span>2016.06.16</span>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/mini_sharing_total.jpg" alt="게시물12">
+                                2015년 시드물 나눔활동 총결산<br><span>2015.12.28</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_button">
+                    <button type="button" class="flbtn"><img src="images/dleft_arrow.png"></button>
+                    <button type="button" class="pre_nextbtn"><img src="images/left_arrow.png"></button>
+                    <button type="button" class="numb b_active">1</button>
+                    <button type="button" class="numb">2</button>
+                    <button type="button" class="numb">3</button>
+                    <button type="button" class="numb">4</button>
+                    <button type="button" class="numb">5</button>
+                    <button type="button" class="pre_nextbtn"><img src="images/right_arrow.png"></button>
+                    <button type="button" class="flbtn"><img src="images/dright_arrow.png"></button>
+                </div>
+            </ul>
+            <ul class="tab_content">
+                <p>준비중</p>
+                <img src="images/dog-gb73a441e5_640.jpg">
+            </ul>
         </div>
     </div>
 

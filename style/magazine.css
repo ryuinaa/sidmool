@@ -15,7 +15,7 @@
     height: 50px;
     margin-top: 50px;
 }
-.m_lnb li {
+.tab_btn li {
     width: 25%;
     float: left;
     text-align: center;
@@ -23,11 +23,17 @@
     background-color: #f2f2f2;
     border: 1px solid #c4c4c4;
 }
-.m_lnb .active {
+.tab_btn .active {
     background-color: #353B3B;
 }
 .m_lnb .active a {
     color: #f2f2f2;
+}
+.tab_content {
+    display: none;
+}
+.tab_content.active {
+    display: inherit;
 }
 
 /* ==================== */
