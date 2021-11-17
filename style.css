@@ -249,7 +249,7 @@ header {
 }
 section{
     width:1200px;
-    margin:100px 0px; 
+    margin:70px 0px; 
 }
 
 h1,h2{
@@ -313,12 +313,23 @@ h2 a {
 
 
 .adimg{
-    float:left;
-    height:auto;
-    clear:both;
-    font-size:0;
-    margin:50px 0;
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    overflow:hidden;
 }
+.adimg_slide {
+    position: absolute;
+    width: 3600px;
+    height: 400px;
+}
+.adimg_slide li {
+    float: left;
+}
+.adimg_slide img{
+    width:1200px;
+}
+
 
 
 /* ---------------------------------------- */
@@ -371,7 +382,7 @@ h2 a {
 
 
 
-/* ---------------------------------------- */
+/* -------------------시드물 소식/ 사용후기--------------------- */
 .item6 h2 {
     text-align: center;
     width:170px;
@@ -385,8 +396,8 @@ h2 a {
 }
 .item6{
     float:left;
-    margin:100px auto 25px;
-    background:rgba(0,0,0,.25);
+    margin:100px auto 0;
+    /* background:rgba(0,0,0,.25); */
     width:1200px;
     height:412px;
 }
@@ -404,6 +415,8 @@ h2 a {
 /* ---------------------------------------- */
 
 .notice_wrap {
+    float:left;
+    margin-top:200px;
     clear:both;
     /* background-color:skyblue;
     height:70px; */
@@ -411,36 +424,27 @@ h2 a {
 .notice_wrap h2 a{
     border:0;
     font-weight: normal;
+    font-size:16px;
+    font-weight:bold;
 }
 .notice_title{
     width: 580px;
     float:left;
     margin:0 10px;
+    font-size:12px;
 }
-.notice_wrap .date {float:right;}
+.notice_wrap .date {float:right; color:#999;}
 
 /* ---------------------------------------- */
-.bottom_banner{
+/* .bottom_banner{
     clear:both;
     height:200px;
-    margin-top:50px;
+    margin-top:100px;
 }
-
-.bt_wrap_top{
-    height:100px;
-    background:orange
-}
-.bt_wrap_bottom{
-    height:100px;
-    background:yellow;
-}
-.bottom_banner ul li img{
-    width:180px;
-    background:pink;
-    height:100px;
-}
-
-
+.bottom_banner img{
+    margin:0 120px;
+} */
+/* ---------------------------------------- */
 
 
 
@@ -450,7 +454,7 @@ footer{
     height:200px;
     /* background-color:#113125; */
     position:relative;
-        margin-top:100px;
+        margin-top:50px;
 }
 .ft_wrap{
     width:1200px;
@@ -464,7 +468,7 @@ footer{
 }
 .ft1 img{ 
     width:200px;
-    padding-top:71px;
+    margin-top:65px;
     height:auto;
     position:absolute;
 }
@@ -487,7 +491,7 @@ footer{
     float:left;
     padding:5px;
     color:/*white;*/ #999;
-    font-size: 16px;
+    font-size: 14px;
     /* width:200px; */
     padding-right: 20px;
     line-height:40px;
