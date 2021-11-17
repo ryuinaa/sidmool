@@ -52,6 +52,12 @@
     height: auto;
     text-align: center;
 }
+.tab_content {
+    display: none;
+}
+.tab_content.active {
+    display: inherit;
+}
 .headline {
     clear: left;
     text-align: center;
