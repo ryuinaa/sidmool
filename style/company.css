@@ -25,11 +25,17 @@ body {
     width: 33.333%;
     text-align: center;
     padding: 15px;
-    background-color: #f2f2f2;
-    border: 1px solid #c4c4c4;
+    background-color: #aaa;
+    border-bottom: 1px solid #4B816A;
+    color: #222;
+    cursor: pointer;
 }
 .c_lnb .active {
-    background-color: #353B3B;
+    background-color: #fff;
+    color: #113125;
+    font-weight: bold;
+    border: 1px solid #113125;
+    border-bottom: 1px solid #fff;
 }
 .c_lnb .active a {
     color: #f2f2f2;
@@ -55,9 +61,11 @@ body {
     width: 100%;
     height: auto;
     text-align: center;
+    position: relative;
 }
 .tab_content {
     display: none;
+    padding: 15px 0;
 }
 .tab_content.active {
     display: inherit;
@@ -112,6 +120,21 @@ body {
     line-height: 50px;
     font-size: 24px;
 }
+.text_l p {
+    margin-top: 20px;
+    line-height: 30px;
+}
+.text_r {
+    text-align: right;
+}
+.text_r h3 {
+    line-height: 50px;
+    font-size: 24px;
+}
+.text_r p {
+    margin-top: 20px;
+    line-height: 30px;
+}
 .contents img {
     margin: 30px 0;
 }
@@ -128,4 +151,22 @@ body {
     text-align: center;
     object-fit: none;
     margin: 30px 0;
+}
+.sid_img {
+    position: absolute;
+    top: 2450px;
+}
+.sam_img {
+    position: absolute;
+    top: 2800px;
+    width: 25%;
+    height: 200px;
+    object-fit: cover;
+    right: 0;
+}
+.cos_img {
+    position: absolute;
+    top: 3000px;
+    left: 0;
+    width: 30%;
 }
