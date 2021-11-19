@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/magazine.css">
     <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
     <script src="script/m_script.js"></script>
     <script src="https://kit.fontawesome.com/13d0944c7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="m_header">
+    <header>
         <div class="tnb">
             <nav>
                 <ul>
@@ -31,11 +34,104 @@
                     <a href="#"><img src="images/top_logo11.png" alt="logo"></a>
                 </div>
                 <ul>
-                    <li><a href="#">제품전체보기</a></li>
-                    <li><a href="#">시드물소개</a></li>
-                    <li><a href="#">제품가이드</a></li>
-                    <li><a href="#">사용후기</a></li>
-                    <li><a href="#">시드물소식</a></li>
+                    <li class="hover"><a href="#">제품전체보기</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_wrap_wh">
+                                <div class="menu_left">
+                                    <a href="#">기능별</a>
+                                    <a href="#">성분라인별</a>
+                                    <a href="#">고민별</a>
+                                    <a href="#">내츄럴 99</a>
+                                </div>
+                                <div class="menu_right">
+                                    <div class="m_r_1">
+                                        <a href="#">기초화장</a>
+                                        <a href="#">바디</a>
+                                        <a href="#">헤어</a>
+                                        <a href="#">화장소품</a>
+                                        <a href="#">건강식품</a>
+                                        <a href="#">유아&청소년 추천</a>
+                                        <a href="#">색조</a>
+                                    </div>
+                                    <div class="m_r_2">
+                                        <a href="#">무오일다당류</a>
+                                        <a href="#">알로에</a>
+                                        <a href="#">봉독</a>
+                                        <a href="#">바하</a>
+                                        <a href="#">아하</a>
+                                        <a href="#">녹차(EGCG)</a>
+                                        <a href="#">카렌듈라</a>
+                                        <a href="#">아크바이</a>
+                                        <a href="#">레드큐어</a>
+                                        <a href="#">천연오일</a>
+                                        <a href="#">메가펩타이드</a>
+                                        <a href="#">콜라겐</a>
+                                        <a href="#">호호바</a>
+                                        <a href="#">휴먼올리고</a>
+                                        <a href="#">뷰리즈</a>
+                                        <a href="#">EGF</a>
+                                        <a href="#">프로폴리스</a>
+                                        <a href="#">히아루론산</a>
+                                        <a href="#">세라마이드</a>
+                                        <a href="#">티트리</a>
+                                        <a href="#">아스타잔틴</a>
+                                        <a href="#">사카로발효</a>
+                                        <a href="#">닥터트럽</a>
+                                        <a href="#">병풀(센텔라)</a>
+                                        <a href="#">징크</a>
+                                        <a href="#">동백</a>
+                                        <a href="#">스킨소스</a>
+                                        <a href="#">판테놀</a>
+                                        <a href="#">닥터갈라톡</a>
+                                        <a href="#">달팽이</a>
+                                    </div>
+                                    <div class="m_r_3">
+                                        <a href="#">AC스팟</a>
+                                        <a href="#">바디케어</a>
+                                        <a href="#">모공관리</a>
+                                        <a href="#">피지관리</a>
+                                        <a href="#">장벽강화</a>
+                                        <a href="#">각질관리</a>
+                                        <a href="#">트럽</a>
+                                        <a href="#">악건성</a>
+                                        <a href="#">붉은톤</a>
+                                        <a href="#">미백</a>
+                                        <a href="#">자외선차단</a>
+                                        <a href="#">주름개선&탄력</a>
+                                        <a href="#">속건성(수부지)</a>
+                                        <a href="#">화이트/블랙헤드 관리</a>
+                                        <a href="#">건조&민감피부</a>
+                                        <a href="#">안티옥시</a>
+                                        <a href="#">탈모</a>
+                                        <a href="#">레이저관리</a>
+                                        <a href="#">탄력집중관리</a>
+                                        <a href="#">시카케어</a>
+                                        <a href="#">동물성프리</a>
+                                        <a href="#">미백&주름개선</a>
+                                    </div>
+                                    <div class="m_r_4">
+                                        <a href="#">클렌징</a>
+                                        <a href="#">퍼스트에센스</a>
+                                        <a href="#">스킨토너미스트</a>
+                                        <a href="#">앰플</a>
+                                        <a href="#">에센스세럼</a>
+                                        <a href="#">수분젤로션</a>
+                                        <a href="#">크림</a>
+                                        <a href="#">립&아이</a>
+                                        <a href="#">페이스&바디오일</a>
+                                        <a href="#">마스크팩</a>
+                                        <a href="#">바디&헤어</a>
+                                        <a href="#">자외선차단</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hover"><a href="#">시드물소개</a></li>
+                    <li class="hover"><a href="#">제품가이드</a></li>
+                    <li class="hover"><a href="#">사용후기</a></li>
+                    <li class="hover"><a href="#">시드물소식</a></li>
                 </ul>
                 <!--검색창 영역-->
                 <div class="search">
@@ -48,6 +144,8 @@
                 </div>
             </nav>
         </div>
+
+
     </header>
 
     <div class="wrap">
@@ -143,8 +241,13 @@
                 </div>
             </ul>
             <ul class="tab_content">
-                <p>준비중</p>
-                <img src="images/dog-gb73a441e5_640.jpg">
+                <img src="images/preparing.png" alt="페이지 준비중">
+            </ul>
+            <ul class="tab_content">
+                <img src="images/preparing.png" alt="페이지 준비중">
+            </ul>
+            <ul class="tab_content">
+                <img src="images/preparing.png" alt="페이지 준비중">
             </ul>
         </div>
     </div>

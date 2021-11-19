@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-#m_header {
-    height: 100px;
-}
-
 .wrap {
     width: 1000px;
 }
@@ -11,29 +7,43 @@
 /* ==================== */
 /* 탭 스타일 */
 .m_lnb {
-    width: 100%;
+    width: 1000px;
     height: 50px;
+    font-size: 18px;
     margin-top: 50px;
 }
-.tab_btn li {
-    width: 25%;
+.m_lnb li {
     float: left;
+    width: 25%;
     text-align: center;
     padding: 15px;
-    background-color: #f2f2f2;
-    border: 1px solid #c4c4c4;
+    background-color: #aaa;
+    border-bottom: 2px solid #4B816A;
+    color: #222;
+    cursor: pointer;
 }
-.tab_btn .active {
-    background-color: #353B3B;
+.m_lnb .active {
+    background-color: #fff;
+    color: #113125;
+    font-weight: bold;
+    border: 2px solid #4B816A;
+    border-bottom: 2px solid #fff;
 }
 .m_lnb .active a {
-    color: #f2f2f2;
+    color: #113125;
 }
-.tab_content {
-    display: none;
+.m_lnb2 {
+    width: 50%;
+    margin-top: 25px;
 }
-.tab_content.active {
-    display: inherit;
+.m_lnb2 li {
+    float: left;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+.m_lnb2 .active2 {
+    border-bottom: 3px solid #4B816A;
 }
 
 /* ==================== */
@@ -61,6 +71,13 @@
 .contents {
     width: 100%;
     height: auto;
+}
+.tab_content {
+    display: none;
+    text-align: center;
+}
+.tab_content.active {
+    display: inherit;
 }
 .mag_wrap {
     width: 100%;
@@ -123,15 +140,15 @@
 .page_button .flbtn{
     width: 32px;
     height: 32px;
-    border: 1px solid #353B3B;
+    border: 1px solid #aaa;
     color: #f2f2f2;
-    background-color: #353B3B;
+    background-color: #aaa;
     border-radius: 5px;
 }
 .page_button .pre_nextbtn {
     width: 32px;
     height: 32px;
-    border: 1px solid #353B3B;
+    border: 1px solid #aaa;
     border-radius: 5px;
 }
 .page_button .flbtn:active {

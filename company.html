@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/company.css">
     <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
     <script src="script/c_script.js"></script>
     <script src="https://kit.fontawesome.com/13d0944c7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="c_header">
+    <header>
         <div class="tnb">
             <nav>
                 <ul>
@@ -31,12 +35,104 @@
                     <a href="#"><img src="images/top_logo11.png" alt="logo"></a>
                 </div>
                 <ul>
-                    <li><a href="#">제품전체보기</a></li>
-                    <li><a href="#">시드물소개</a></li>
-                    <li><a href="#">제품가이드</a></li>
-                    <li><a href="#">사용후기</a></li>
-                    <li><a href="#">시드물소식</a></li>
-                    <li><a href="#">시드물통신</a></li>
+                    <li class="hover"><a href="#">제품전체보기</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_wrap_wh">
+                                <div class="menu_left">
+                                    <a href="#">기능별</a>
+                                    <a href="#">성분라인별</a>
+                                    <a href="#">고민별</a>
+                                    <a href="#">내츄럴 99</a>
+                                </div>
+                                <div class="menu_right">
+                                    <div class="m_r_1">
+                                        <a href="#">기초화장</a>
+                                        <a href="#">바디</a>
+                                        <a href="#">헤어</a>
+                                        <a href="#">화장소품</a>
+                                        <a href="#">건강식품</a>
+                                        <a href="#">유아&청소년 추천</a>
+                                        <a href="#">색조</a>
+                                    </div>
+                                    <div class="m_r_2">
+                                        <a href="#">무오일다당류</a>
+                                        <a href="#">알로에</a>
+                                        <a href="#">봉독</a>
+                                        <a href="#">바하</a>
+                                        <a href="#">아하</a>
+                                        <a href="#">녹차(EGCG)</a>
+                                        <a href="#">카렌듈라</a>
+                                        <a href="#">아크바이</a>
+                                        <a href="#">레드큐어</a>
+                                        <a href="#">천연오일</a>
+                                        <a href="#">메가펩타이드</a>
+                                        <a href="#">콜라겐</a>
+                                        <a href="#">호호바</a>
+                                        <a href="#">휴먼올리고</a>
+                                        <a href="#">뷰리즈</a>
+                                        <a href="#">EGF</a>
+                                        <a href="#">프로폴리스</a>
+                                        <a href="#">히아루론산</a>
+                                        <a href="#">세라마이드</a>
+                                        <a href="#">티트리</a>
+                                        <a href="#">아스타잔틴</a>
+                                        <a href="#">사카로발효</a>
+                                        <a href="#">닥터트럽</a>
+                                        <a href="#">병풀(센텔라)</a>
+                                        <a href="#">징크</a>
+                                        <a href="#">동백</a>
+                                        <a href="#">스킨소스</a>
+                                        <a href="#">판테놀</a>
+                                        <a href="#">닥터갈라톡</a>
+                                        <a href="#">달팽이</a>
+                                    </div>
+                                    <div class="m_r_3">
+                                        <a href="#">AC스팟</a>
+                                        <a href="#">바디케어</a>
+                                        <a href="#">모공관리</a>
+                                        <a href="#">피지관리</a>
+                                        <a href="#">장벽강화</a>
+                                        <a href="#">각질관리</a>
+                                        <a href="#">트럽</a>
+                                        <a href="#">악건성</a>
+                                        <a href="#">붉은톤</a>
+                                        <a href="#">미백</a>
+                                        <a href="#">자외선차단</a>
+                                        <a href="#">주름개선&탄력</a>
+                                        <a href="#">속건성(수부지)</a>
+                                        <a href="#">화이트/블랙헤드 관리</a>
+                                        <a href="#">건조&민감피부</a>
+                                        <a href="#">안티옥시</a>
+                                        <a href="#">탈모</a>
+                                        <a href="#">레이저관리</a>
+                                        <a href="#">탄력집중관리</a>
+                                        <a href="#">시카케어</a>
+                                        <a href="#">동물성프리</a>
+                                        <a href="#">미백&주름개선</a>
+                                    </div>
+                                    <div class="m_r_4">
+                                        <a href="#">클렌징</a>
+                                        <a href="#">퍼스트에센스</a>
+                                        <a href="#">스킨토너미스트</a>
+                                        <a href="#">앰플</a>
+                                        <a href="#">에센스세럼</a>
+                                        <a href="#">수분젤로션</a>
+                                        <a href="#">크림</a>
+                                        <a href="#">립&아이</a>
+                                        <a href="#">페이스&바디오일</a>
+                                        <a href="#">마스크팩</a>
+                                        <a href="#">바디&헤어</a>
+                                        <a href="#">자외선차단</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hover"><a href="#">시드물소개</a></li>
+                    <li class="hover"><a href="#">제품가이드</a></li>
+                    <li class="hover"><a href="#">사용후기</a></li>
+                    <li class="hover"><a href="#">시드물소식</a></li>
                 </ul>
                 <!--검색창 영역-->
                 <div class="search">
@@ -49,7 +145,10 @@
                 </div>
             </nav>
         </div>
+
+
     </header>
+
     <div class="wrap">
         <div class="c_lnb">
             <ul class="tab_btn">
@@ -81,7 +180,7 @@
                     <p></p>
                     <h3>고객 만족 100%를 목표로 최선을 다하겠습니다.</h3>
                 </div>
-                <img src="images/customer_satisfying.png" alt="고객만족 타일사진">
+                <img src="images/feedback.jpg" alt="고객만족 사진">
                 <div class="text_c">
                     <p>함께 노력하면 어려운 일도 쉽게 해낼 수 있다는 믿음을 바탕으로
                         <br>오래도록 함께하는 우리가 있어서<br>너무 행복하고 감사합니다.
@@ -90,45 +189,9 @@
                 <div class="s_wrap">
                     <img src="images/brand_story.png" alt="브랜드 설명">
                 </div>
-                <div class="text_l">
-                    <h3>시드물의 역사가</h3>
-                    <h3>청년 창업을 꿈꾸는 모두에게</h3>
-                    <h3>좋은 도움이 되었으면 좋겠습니다.</h3>
-                </div>
-                <img src="images/sidmool_company.png" class="sid_img" alt="회사건물 이미지">
-                <div class="text_l">
-                    <p>
-                        시드물은 청년 창업으로 시작한 회사입니다.<br>
-                        오랜 시간동안 고객님의 사랑과 관심으로 <br>
-                        지금의 시드물이 되었습니다.<br>
-                        저희 시드물은 초심을 잃지 않고 고객과의 약속을 지키며<br>
-                        시드물의 창업 스토리가 많은 청년 창업가들의<br>
-                        귀감이 되고자 노력하겠습니다.<br>
-                    </p>
-                </div>
-                <br>
-                <div class="text_l">
-                    <h3>시드물; 시리고 맑은 물 (SIDMOOL)</h3>
-                    <p>고객님의 피부 고민을 해결하여 고향같은 편안함을 드리고 싶은 마음을 담아<br>
-                        제가 태어난 충남 금산에 있는 고향 마을 이름인 시드물을 회사 이름과 브랜드로 만들었습니다.</p>
-                </div>
-                <img src="images/water.jpg" class="sam_img" alt="샘물 이미지">
-                <br><br><br>
-                <div class="text_r">
-                    <h3>가족들이 믿고 사용할 수 있는 화장품으로 시작한 시드물</h3>
-                    <p>
-                        단순히 이익을 추구하는 것이 목표가 아닌<br>
-                        함께하는 소통과 정을 통해서 세상에 꼭 필요한 빛과 소금같은 회사로 만들어 가고 있습니다.
-                    </p>
-                </div>
-                <img src="images/cosmetic.jpg" class="cos_img" alt="화장품 이미지">
-                <br><br><br>
-                <div class="text_l">
-                    <h3>화장품은 성분과 함께 만드는 사람의 착한 마음이 NO.1이라는 믿음</h3>
-                    <p>
-                        오직 고객님들의 피부 고민을 덜어드리기 위해서<br> 시드물은 쉼 없이 공부하며
-                        좋은 화장품을 개발하겠습니다.
-                    </p>
+                <img src="images/sidmool_history.png" alt="브랜드설명2">
+                <div class="s_wrap">
+                    <img src="images/sidmool_brand.png" alt="브랜드 설명">
                 </div>
             </ul>
             <ul class="tab_content">

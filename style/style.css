@@ -18,104 +18,229 @@ body {
     max-width:100%;
     height:auto;
     background:#eee4;
-    font-family:'맑은고딕';
+    font-family: 'Noto Sans KR', sans-serif;
 }
 header {
-    width:100%;
-    height:700px;
+    width: 100%;
+    height: 100px;
 }
-.tnb{
-    background-color:#113125;
-    height:30px;
+
+.tnb {
+    background-color: #113125;
+    height: 30px;
 }
-.tnb nav{
+
+.tnb nav {
     width: 1200px;
     height: 30px;
 }
-.tnb ul{
-    float:right;
-}
-.tnb li{
-    float:left;
-    margin-left: 20px;
-    
-}
-.tnb a{
-    line-height:30px;
-    color: white;
+
+.tnb ul {
+    float: right;
 }
 
-.gnb{
-    background-color:#f2f2f2;
-    height:70px;
-    overflow:hidden;
+.tnb li {
+    float: left;
+    margin-left: 20px;
+
+}
+
+.tnb a {
+    line-height: 30px;
+    color: #f2f2f2;
+    font-size: 11px;
+}
+
+.gnb {
+    background-color: #f2f2f2;
+    height: 70px;
+    overflow: hidden;
 }
 
 /*로고*/
-.top_logo img{
-    /* height:70px; */
-    float:left;
-    width:200px;
-    margin-top:3px;
+.top_logo img {
+    float: left;
+    width: 200px;
+    margin-top: 3px;
 }
 
-.gnb nav{
+.gnb nav {
     width: 1200px;
     height: 70px;
 }
-.gnb ul{
-    width:800px;
-    height:70px;
-    float:left;
-        padding-left:2px;
-}
-.gnb li{
-    float:left;
-    /* margin-right:71px; */
-    text-align:center;
-    width:133px; /*가운데정렬 width값*/
-}
-.gnb a{
-    line-height:70px;
-    color: #113125;
-    font-size:1.2em;
-    text-align:center;
-    padding:17px 0;
-}
-.gnb a:hover{
-    font-weight:bold;
-    border-bottom:5px solid #113125;
-    
+
+.gnb ul {
+    width: 800px;
+    height: 70px;
+    float: left;
+    padding-left: 3px;
 }
 
+.gnb li {
+    float: left;
+    text-align: center;
+    width: 159px;
+    /*가운데정렬 width값*/
+}
+
+.gnb a {
+    line-height: 70px;
+    color: rgba(17, 49, 37, 0.8);
+    font-size: 1.2em;
+    text-align: center;
+    padding: 17px 0;
+    font-weight: bold;
+}
+
+.gnb .hover>a:hover {
+    border-bottom: 5px solid #113125;
+    color: #113125;
+}
+
+/* 전체메뉴보기 - 카테고리 영역 */
+.submenu_wrap {
+    position: absolute;
+    z-index: 1;
+    background: #f2f2f2;
+    padding: 10px;
+    overflow: hidden;
+    width: 800px;
+    height: 300px;
+    display: none;
+}
+
+.submenu_wrap_wh {
+    background: white;
+    height: 280px;
+}
+
+.menu_left {
+    width: 100px;
+    height: 280px;
+    border: 0;
+    float: left;
+}
+
+.menu_left a {
+    width: 100px;
+    height: 70px;
+    line-height: 37px;
+    float: left;
+    font-size: 14px;
+    background: #113125;
+    color: white;
+    text-align: center;
+}
+
+/* .menu_left a:hover{
+    color:#eee;
+} */
+.menu_right {
+    width: 680px;
+    height: 280px;
+    float: left;
+}
+
+.menu_right a {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px;
+}
+
+.menu_right a:hover {
+    /* text-decoration: underline; */
+    color:
+        /*#4b806a;*/
+        #95afa5;
+}
+
+/* ---------------------------------------- */
+.m_r_1 {
+    width: 100%;
+    height: 70px;
+    text-align: Justify;
+    word-break: keep-all;
+}
+
+.m_r_1 a {
+    padding: 0 23px;
+    line-height: 70px;
+}
+
+.m_r_2 {
+    width: 100%;
+    height: 70px;
+    padding: 2px 5px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: Justify;
+    word-break: keep-all;
+}
+
+.m_r_2 a {
+    padding: 0 5px;
+}
+
+.m_r_3 {
+    width: 100%;
+    height: 70px;
+    padding: 2px 5px 0;
+    text-align: Justify;
+    word-break: keep-all;
+}
+
+.m_r_3 a {
+    padding: 0 5px;
+}
+
+.m_r_4 {
+    width: 100%;
+    height: 70px;
+    padding: 12px 5px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: Justify;
+    word-break: keep-all;
+}
+
+.m_r_4 a {
+    padding: 0 5px;
+}
+
+
+/* ---------------------------------------- */
 /*검색창 영역*/
-.search{
-    float:right;
-    width:200px;
-    padding:0 3px;
+.search {
+    float: right;
+    width: 200px;
 }
-.search fieldset{
-    position:relative;
-    border:none;
-    line-height:70px;
+
+.search fieldset {
+    position: relative;
+    border: none;
+    line-height: 70px;
 }
-.searchBox{
-    height:30px;
-    padding:0 10px;
-    border-radius:100px;
-    border:none;
-    outline:none;
+
+.searchBox {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
 }
-.searchButton{
-    position:absolute;
-    background:none;
-    border:none;
-    color:#113125;
-    top:30px;
-    right:15px;
+
+.searchButton {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #113125;
+    top: 25px;
+    right: 10px;
 }
-.searchButton:hover{
-    cursor:pointer;
+
+.searchButton:hover {
+    cursor: pointer;
 }
 
 
@@ -134,57 +259,81 @@ header {
 
 /* ---------------------------------------- */
 
-.wrap{
-    width:1200px;
-    overflow:hidden;
-}
-section{
-    width:1200px;
-    margin:100px 0px; 
+.wrap {
+    width: 1200px;
+    overflow: hidden;
 }
 
-h1,h2{
-    padding-bottom:15px;
+section {
+    width: 1200px;
+    margin: 70px 0px;
 }
-h1 a:before{
-    border-left:5px solid #113125;
+
+h1,
+h2 {
+    padding-bottom: 15px;
+}
+
+h1 a:before {
+    border-left: 5px solid #113125;
     content: "";
-    padding-left:10px;
+    padding-left: 10px;
 }
+
 h2 a {
-    border-bottom:5px solid #113125;
+    border-bottom: 5px solid #113125;
 }
 
-.item1{
-    float:left;
+.item1 {
+    float: left;
 }
-.item1_wrap li{
-    float:left;
+
+.item1 a {
+    text-align: center;
+}
+
+.item1_wrap li {
+    float: left;
     width: 230px;
     height: 230px;
-    background: rgb(145, 187, 169);
     margin: 5px;
 }
 
-.item2{
-    float:left;
+.item1_wrap img {
+    /* width:230px; */
+    padding: 25px 35px;
 }
-.item2_wrap li{
-    float:left;
+
+.item2 {
+    float: left;
+}
+
+.item2_wrap li {
+    float: left;
     width: 230px;
     height: 230px;
-    background: rgb(145, 187, 169);
     margin: 5px;
 }
-.item3{
-    float:left;
+
+.item2_wrap img {
+    /* width:230px; */
+    padding: 25px 35px;
 }
-.item3_wrap li{
-    float:left;
+
+.item3 {
+    float: left;
+}
+
+.item3_wrap li {
+    float: left;
     width: 230px;
     height: 230px;
-    background: rgb(145, 187, 169);
     margin: 5px;
+}
+
+.item3_wrap img {
+    /* width:230px; */
+    padding: 25px 35px;
 }
 
 
