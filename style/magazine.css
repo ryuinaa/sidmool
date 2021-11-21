@@ -7,18 +7,21 @@
 /* ==================== */
 /* 탭 스타일 */
 .m_lnb {
-    width: 1000px;
+    width:1000px;
     height: 50px;
     font-size: 18px;
     margin-top: 50px;
+}
+.m_lnb a{
+    color:#fff;
 }
 .m_lnb li {
     float: left;
     width: 25%;
     text-align: center;
     padding: 15px;
-    background-color: #aaa;
-    border-bottom: 2px solid #4B816A;
+    background-color: #4B816A;
+    border-bottom: 2px solid #113125;
     color: #222;
     cursor: pointer;
 }
@@ -26,8 +29,10 @@
     background-color: #fff;
     color: #113125;
     font-weight: bold;
-    border: 2px solid #4B816A;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid #113125;
+    border-left: 2px solid #113125;
+    border-right: 2px solid #113125;
+    border-bottom: none;
 }
 .m_lnb .active a {
     color: #113125;
