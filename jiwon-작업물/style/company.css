@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    font-family: 'Nanum Gothic', '맑은 고딕';
+}
+
+/* =============== */
+/* 상단 탭 스타일 */
+.c_lnb {
+    width:1000px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.c_lnb a{
+    color:#fff;
+}
+.c_lnb li {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    padding: 15px;
+    background-color: #4B816A;
+    border-bottom: 2px solid #113125;
+    color: #222;
+    cursor: pointer;
+}
+.c_lnb .active {
+    background-color: #fff;
+    color: #113125;
+    font-weight: bold;
+    border-top: 2px solid #113125;
+    border-left: 2px solid #113125;
+    border-right: 2px solid #113125;
+    border-bottom: none;
+}
+.c_lnb .active a {
+    color: #113125;
+}
+.c_lnb2 {
+    width: 50%;
+    margin-top: 25px;
+}
+.c_lnb2 li {
+    float: left;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+.c_lnb2 .active2 {
+    border-bottom: 3px solid #4B816A;
+}
+
+
+/* ============== */
+/* 컨텐츠 영역 */
+.contents {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+.tab_content {
+    display: none;
+    padding: 15px 0;
+}
+.tab_content.active {
+    display: inherit;
+}
+.headline {
+    clear: left;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 24px;
+}
+.headline span {
+    color: #4B816A;
+}
+
+.images {
+    width: 1000px;
+    background-color: #aaa;
+}
+.images img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    border-radius: 70%;
+    overflow: hidden;
+}
+.images li {
+    width: 500px;
+    float: left;
+}
+
+.text_c{
+    /* width: 50%; */
+    text-align: center;
+}
+.text_c h4 {
+    clear: left;
+    padding-top: 50px;
+    font-size: 20px;
+}
+.text_c p {
+    margin-top: 20px;
+    line-height: 30px;
+}
+.text_c h3 {
+    margin-top: 50px;
+    font-size: 24px;
+}
+.contents img {
+    margin: 30px 0;
+}
+.s_wrap {
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    margin: 60px 0;
+}
