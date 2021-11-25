@@ -6,28 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--favicon영역-->
+    <link rel="shortcut icon" href="images/favv.png">
     <title>시드물(SIDMOOL) - 피부의 고향</title>
     <link rel="stylesheet" href="style/style.css">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
     <script src="scrpit/jquery.min.js"></script>
     <script src="scrpit/script.js"></script>
     <script src="https://kit.fontawesome.com/13d0944c7e.js" crossorigin="anonymous"></script>
+
+
+
+
 </head>
 
 <body>
-    <div id="side">
-        <div class="side-wrap">
-            이건 사이드
+    <!--aside 슬라이드 메뉴-->
+    <div class="side">
+        <div class="slide_btn">
             <button id="in-out">
                 <div class="fa-layer">
-                    <i class="fas fa-chevron-right blind"></i>
+                    <!-- <img src="images/menu.png"> -->
                     <i class="fas fa-chevron-left"></i>
                 </div>
             </button>
-            <p>내용나옴</p>
+            <ul>
+                <!-- <li class="tabopen"></li>
+                <ii class="tabclose"></li> -->
+
+                <li class="sns1"><a href="https://cafe.naver.com/sdmool"></a></li>
+                <li class="sns2"><a href="https://www.facebook.com/sidmool1"></a></li>
+                <li class="sns3"><a href="https://www.instagram.com/sidmool/"></a></li>
+                <li class="sns4"><a href="https://www.youtube.com/user/sidmoolytb"></a></li>
+                <li class="chat"><a href="#"><img src="images/headphones.png"></a></li>
+            </ul>
+        </div>
+        <div class="sidewrap">
+            <div class="sdhd">
+                <!-- <a href="#"> -->
+                <img src="images/top_logo1.png" alt="sidmool">
+                <!-- </a> -->
+            </div>
+            <div class="sdbtn">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">1:1 문의</a></li>
+            </div>
+            <div class="side_cate">
+                <ul class="side_main_cate">
+                    <li><a href="#">제품구매<span>shop</span><b><i class="fas fa-plus"></i></b></a>
+                        <ul class="cate">
+                            <li><a href="#">기능별</a></li>
+                            <li><a href="#">피부타입별</a></li>
+                            <li><a href="#">성분별</a></li>
+                            <li><a href="#">녹차 라인</a></li>
+                            <li><a href="#">프로폴리스 라인</a></li>
+                            <li><a href="#">Dr. TROUB</a></li>
+                            <li><a href="#">네츄럴 99</a></li>
+                            <li><a href="#">건강식품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">시드물 소개<span>about</span><b><i class="fas fa-plus"></i></b></a>
+                        <ul class="cate">
+                            <li><a href="#">시드물 연혁</a></li>
+                            <li><a href="#">시드물 소개</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티<span>community</span><b><i class="fas fa-plus"></i></b></a>
+                        <ul class="cate">
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">사용후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sdft">
+                <!--고객센터 전화번호 / 계좌정보 -->
+                <div class="sdft1">
+                    <h3>고객센터<span>cs center</span></h3>
+                    <p>1577-9638</p>
+                </div>
+                <div class="sdft2">
+                    <p>전화 주문 연락처<span>042-716-0228</span></p>
+                    <p>해외 전용 고객센터<span>+82-42-716-0227</span></p>
+                </div>
+                <div class="sdft3">
+                    <p>오전 9:00 ~ 오후 17:00</p> <br />
+                    <P style="padding-left:2px;"> 점심시간 PM 12:00 ~ PM 13:00</P><br />
+                    <p>공휴일, 토요일 휴무</p>
+                </div>
+
+                <div class="sdft4">
+                    <h3>입금계좌<span>bank account</span></h3>
+                    <p><b>국민 </b> 460001-04-214514</p>
+                    <p><b>농협 </b> 355-0002-8749-13</p>
+                    <p><b>하나 </b> 643-910004-62604</p>
+                    <p><b>신한 </b> 100-027-169517</p>
+                    <p><b>우리 </b> 1005-902-241888</p>
+                    <p><b>우체국 </b> 310037-01-011233</p>
+                    <p><b>기업 </b> 143-122078-01-015</p>
+                    <p><b>부산 </b> 101-2047-1354-09 <span>예금주 : (주)시드물</span></p>
+
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 
     <header>
@@ -152,21 +240,18 @@
                 <div class="search">
                     <form autocomplete="off" onsubmit="return false">
                         <fieldset>
-                            <input type="text" class="searchBox" placeholder="">
+                            <input type="text" class="searchBox" placeholder="검색어를 입력하세요">
                             <button type="submit" class="searchButton"><i class="fas fa-search"></i>
                         </fieldset>
                     </form>
                 </div>
             </nav>
         </div>
-
-
     </header>
 
-    
 
-    <div class="wrap">
-        <!--이미지 슬라이더 실험-->
+
+    <!--이미지 슬라이더 영역-->
     <div class="slider-1">
         <div class="slides">
             <div class="active" style="background-image:url(images/imgslide1.png);"></div>
@@ -182,95 +267,234 @@
         </div>
         <div class="side-btns">
             <div>
-                <span><i class="fas fa-angle-left" style="padding-left:10.5px;"></i></span>
+                <span><img src="images/prev.png"></span>
             </div>
             <div>
-                <span><i class="fas fa-angle-right" style="padding-left:13px;"></i></i></span>
+                <span><img src="images/next.png"></span>
             </div>
         </div>
     </div>
-    <!--이미지 슬라이더 실험 끝-->
+    <!--이미지 슬라이더 영역-->
+
+
+
+    <div class="wrap">
         <section class="item1">
             <h1><a href="#">인기상품</a></h1>
             <div class="item1_wrap">
                 <ul>
                     <li>
                         <a href="#">
-                        <img src="images/new (1).gif" alt="product">
-                        <p>닥터트럽 립앤아이 리무버 100ml</p>
-                    </a>
-                </li>
-                    <li><a href="#"><img src="images/new (1).jpg" alt="product"></a></li>
-                    <li><a href="#"><img src="images/new (2).jpg" alt="product"></a></li>
-                    <li><a href="#"><img src="images/new (3).jpg" alt="product"></a></li>
-                    <li><a href="#"><img src="images/new (5).jpg" alt="product"></a></li>
+                            <img src="images/new (1).gif" alt="product">
+                            <b>닥터트럽 립앤아이 리무버</b>
+                            <p> ￦ 8,600</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/new (1).jpg" alt="product">
+                            <b>사카로 효모 테라피 에센스</b>
+                            <p>￦ 19,840</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/new (2).jpg" alt="product">
+                            <b>시드물 황금 동백 스킨</b>
+                            <p>￦ 24,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/new (3).jpg" alt="product">
+                            <b>민중기 EGF 110 리퀴드</b>
+                            <p>￦ 42,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/new (5).jpg" alt="product">
+                            <b>휴먼 올리고 리페어 아이크림</b>
+                            <p>￦ 21,600</p>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
+
 
 
         <!--Tab으로 만들 영역 시작-->
-        <section class="item2">
-            <h2><a href="#">신상품</a></h2>
-            <div class="item2_wrap">
-                <ul>
-                    <li><a href="#"><img src="images/img (17).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (18).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (19).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (20).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (21).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (22).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (23).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (24).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (25).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (39).jpg" alt="new"></a></li>
-                </ul>
+        <div class="clicktab">
+            <div class="tab_btn">
+                <li class="tab1 active">
+                    <h2>신상품</h2>
+                </li>
+                <li class="tab2">
+                    <h2>추천상품</h2>
+                </li>
             </div>
-        </section>
-
-        <section class="item3">
-            <h2><a href="#">추천상품</a></h2>
-            <div class="item3_wrap">
-                <ul>
-                    <li><a href="#"><img src="images/img (17).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (18).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (19).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (20).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (21).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (22).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (23).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (24).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (25).jpg" alt="new"></a></li>
-                    <li><a href="#"><img src="images/img (39).jpg" alt="new"></a></li>
+            <section class="item2">
+                <ul class="newitem">
+                    <li>
+                        <a href="#">
+                            <img src="images/img (17).jpg" alt="new">
+                            <b>레드큐어 루디덤 세럼</b>
+                            <p>￦ 22,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (18).jpg" alt="new">
+                            <b>닥터트럽 바하 에센스</b>
+                            <p>￦ 14,200</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (19).jpg" alt="new">
+                            <b>닥터트럽 바하크림</b>
+                            <p>￦ 14,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (20).jpg" alt="new">
+                            <b>닥터트럽 세라마이드 접착크림</b>
+                            <p>￦ 19,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (21).jpg" alt="new">
+                            <b>이데베논 탄력 수분 크림</b>
+                            <p>￦ 12,600</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (22).jpg" alt="new">
+                            <b>민중기 피브로 블라스트 앰플</b>
+                            <p>￦ 86,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (23).jpg" alt="new">
+                            <b>닥터트럽 포어 리파이닝 세럼</b>
+                            <p>￦ 14,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (24).jpg" alt="new">
+                            <b>닥터트럽 워터 플러스 에센스</b>
+                            <p>￦ 24,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (25).jpg" alt="new">
+                            <b>갈라톡사이드 리얼 N.M.F 장벽 세럼</b>
+                            <p>￦ 14,900</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/img (39).jpg" alt="new">
+                            <b>시드물 옴므 올인 쉐이빙 젤</b>
+                            <p>￦ 11,300</p>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-        </section>
+                <ul class="promo">
+                    <li>
+                        <a href="#">
+                            <img src="images/111111.jpg" alt="new">
+                            <b>인플락스 포어 컨트롤 앰플</b>
+                            <p>￦ 14,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/22222.jpg" alt="new">
+                            <b>애버매트 모공앰플</b>
+                            <p>￦ 14,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/333333.jpg" alt="new">
+                            <b>골드 리프트 멜라 바이 SVC20 앰플</b>
+                            <p>￦ 18,900</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/444.jpg" alt="new">
+                            <b>[자연사랑패키지] 녹차로션</b>
+                            <p>￦ 4,300</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/555.jpg" alt="new">
+                            <b>[자연사랑패키지] 녹차스킨</b>
+                            <p>￦ 12,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/666.jpg" alt="new">
+                            <b>아크바이™ 로션</b>
+                            <p>￦ 6,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/777.jpg" alt="new">
+                            <b>닥터트럽 바이오 리페어 파우더<br />클렌져</b>
+                            <p>￦ 15,600</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/888.jpg" alt="new">
+                            <b>자연산 냉압착 호호바 오일</b>
+                            <p>￦ 6,500</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/999.jpg" alt="new">
+                            <b>푸르름을 간직한 녹차 씨 오일</b>
+                            <p>￦ 6,800</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/1010.jpg" alt="new">
+                            <b>자연산 티트리 에센셜 오일</b>
+                            <p>￦ 9,800</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
         <!--Tab으로 만들 영역 끝-->
 
+        <!--ad img 영역-->
+        <!--ad img 영역-->
+        <section class="adimg">
+            <ul class="adimg_slide">
+                <li><a href="#"><img src="images/adimg_(1).jpg"></a></li>
+                <li><a href="#"><img src="images/adimg_(1).png"></a></li>
+                <li><a href="#"><img src="images/adimg_(2).png"></a></li>
+            </ul>
+        </section>
+        <!--ad img 영역-->
+        <!--ad img 영역-->
 
-        <!--이미지 슬라이더 실험-->
-    <div class="slider-1">
-        <div class="slides">
-            <div class="active" style="background-image:url(images/adimg (1).jpg);"></div>
-            <div style="background-image:url(images/adimg (1).jpg);"></div>
-            <div style="background-image:url(images/adimg (1).jpg);"></div>
-        </div>
-        <div class="page-btns">
-            <div class="active"></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="side-btns">
-            <div>
-                <span><i class="fas fa-angle-left" style="padding-left:10.5px;"></i></span>
-            </div>
-            <div>
-                <span><i class="fas fa-angle-right" style="padding-left:13px;"></i></i></span>
-            </div>
-        </div>
-    </div>
-    <!--이미지 슬라이더 실험 끝-->
 
         <section class="item4">
             <h1><a href="#">시드물이 추천하는 솔루션</a></h1>
@@ -293,29 +517,6 @@
             </div>
         </section>
 
-        <section class="item6">
-            <h2><a href="#">시드물소식</a></h2>
-            <div class="item6_wrap">
-                <ul>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="item6">
-            <h2><a href="#">사용후기</a></h2>
-            <div class="item6_wrap">
-                <ul>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                    <li><a href="#"><img src="" alt=""></a></li>
-                </ul>
-            </div>
-        </section>
-
 
 
 
@@ -323,8 +524,9 @@
 
         <div class="notice_wrap">
             <h2><a href="#">공지사항</a></h2>
-            <a href="#" class="notice_title">서비스 이용 안내 공지<p class="date">00/00</p></a>
-            <a href="#" class="notice_title">시드물 사용후기 리뷰 이벤트<p class="date">00/00</p></a>
+            <a href="#" class="notice_title">시드물 어플 출시, 서비스 이용 안내<p class="date">11/07</p></a>
+            <a href="#" class="notice_title">시드물 사용후기 리뷰 이벤트 안내<p class="date">09/08</p></a>
+
         </div>
 
     </div>
@@ -354,21 +556,46 @@
                     <p>COPYRIGHT (C) 2008 <a href="#">SIDMOOL</a> ALL RIGHTS RESERVED Hosting by MakeShop</p>
                 </div>
             </div>
-            
-            <div class="ft3">
-                <img src="images/qr.png">
-            </div>
+
+
 
         </div>
-        <a href="#" class="topbtn">top</a>
+        <a href="#" class="topbtn"><i class="fas fa-chevron-up"></i></a>
     </footer>
 
 
 
+    <div id="popup">
+        <a class="btn open"><img src="images/popup5.png" class="chatbox"></a>
+        <div class="popup">
+            <a class="btn close">close</a>
+            <div class="ps1">
+                <ul>
+                    <li class="check">
+                        <a href="#"><img src="images/출석체크8 1.png" alt="출석체크"></a></li>
+                    <li class="app">
+                        <h5>시드물 APP 다운</h5>
+                        <img src="images/qr.png" alt="QR code">
+                    </li>
+                    <li class="banking">
+                        <a href="#"><img src="images/무통장 1.png" alt="입금자 미확인"></a></li>
+                </ul>
+            </div>
+            <div class="ps2">
+                <div class="sdad">
+                    <!--광고 이미지슬라이드-->
+                    <ul class="slide">
+                        <li><a href="#"><img src="images/left_slide_banner_a01.png"></a></li>
+                        <li><a href="#"><img src="images/left_slide_banner_a02.png"></a></li>
+                        <!-- <li><a href="#"><img src="images/left_slide_banner_a03.png"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
 
-    
+
 
 </body>
 
