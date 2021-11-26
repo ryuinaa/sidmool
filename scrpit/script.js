@@ -23,6 +23,8 @@ $(function () {
     //     $(".fas", this).toggleClass("fa-plus fa-minus");
     // });
 
+    //.attr
+
     //아코디언 메뉴
     $(".cate").hide();    
     $(".side_main_cate > li > a").next("ul").first().show();
