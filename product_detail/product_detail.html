@@ -19,20 +19,101 @@
 </head>
 
 <body>
- 
-    <div id="side">
-        <div class="side-wrap">
-            이건 사이드
+     <!--aside 슬라이드 메뉴-->
+     <div class="side">
+        <div class="slide_btn">
             <button id="in-out">
                 <div class="fa-layer">
-                    <i class="fas fa-chevron-right blind"></i>
-                    <i class="fas fa-chevron-left"></i>
+                    <img src="images/menu.png">
+                    <!-- <i class="fas fa-chevron-right blind"></i>
+                    <i class="fas fa-chevron-left"></i> -->
                 </div>
             </button>
-            <p>내용나옴</p>
+            <ul>
+                <!-- <li class="tabopen"></li>
+                <ii class="tabclose"></li> -->
+
+                <li class="sns1"><a href="https://cafe.naver.com/sdmool"></a></li>
+                <li class="sns2"><a href="https://www.facebook.com/sidmool1"></a></li>
+                <li class="sns3"><a href="https://www.instagram.com/sidmool/"></a></li>
+                <li class="sns4"><a href="https://www.youtube.com/user/sidmoolytb"></a></li>
+                <li class="chat"><a href="#"><img src="images/headphones.png"></a></li>
+            </ul>
+        </div>
+        <div class="sidewrap">
+            <div class="sdhd">
+                <!-- <a href="#"> -->
+                <img src="images/top_logo1.png" alt="sidmool">
+                <!-- </a> -->
+            </div>
+            <div class="sdbtn">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">1:1 문의</a></li>
+            </div>
+            <div class="side_cate">
+                <ul>
+                    <li><a href="#">제품구매<span>shop</span><b><i class="fas fa-plus"></i></b></a>
+                        <ul class="cate1">
+                            <li><a href="#">기능별</a></li>
+                            <li><a href="#">피부타입별</a></li>
+                            <li><a href="#">성분별</a></li>
+                            <li><a href="#">녹차 라인</a></li>
+                            <li><a href="#">프로폴리스 라인</a></li>
+                            <li><a href="#">Dr. TROUB</a></li>
+                            <li><a href="#">네츄럴 99</a></li>
+                            <li><a href="#">건강식품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">시드물 소개<span>about</span><b><i class="fas fa-plus"></i></b></a>
+                        <ul class="cate2">
+                            <li><a href="#">시드물 연혁</a></li>
+                            <li><a href="#">시드물 소개</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티<span>community</span><b><i class="fas fa-plus"></i></b></a>
+                        <ul>
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">사용후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sdft">
+                <!--고객센터 전화번호 / 계좌정보 -->
+                <div class="sdft1">
+                    <h3>고객센터<span>cs center</span></h3>
+                    <p>1577-9638</p>
+                </div>
+                <div class="sdft2">
+                    <p>전화 주문 연락처<span>042-716-0228</span></p>
+                    <p>해외 전용 고객센터<span>+82-42-716-0227</span></p>
+                </div>
+                <div class="sdft3">
+                    <p>오전 9:00 ~ 오후 17:00</p> <br/>                    
+                    <P style="padding-left:2px;"> 점심시간 PM 12:00 ~ PM 13:00</P><br/>   
+                    <p>공휴일, 토요일 휴무</p>
+                </div>
+
+                <div class="sdft4">
+                    <h3>입금계좌<span>bank account</span></h3>
+                    <p><b>국민 </b> 460001-04-214514</p>
+                    <p><b>농협 </b> 355-0002-8749-13</p>
+                    <p><b>하나 </b> 643-910004-62604</p>
+                    <p><b>신한 </b> 100-027-169517</p>
+                    <p><b>우리 </b> 1005-902-241888</p>
+                    <p><b>우체국 </b> 310037-01-011233</p>
+                    <p><b>기업 </b> 143-122078-01-015</p>
+                    <p><b>부산 </b> 101-2047-1354-09 <span>예금주 : (주)시드물</span></p>
+
+                </div>
+            </div>
         </div>
     </div>
-
 
     <header>
         <div class="tnb">
@@ -152,23 +233,20 @@
                     <li class="hover"><a href="#">사용후기</a></li>
                     <li class="hover"><a href="#">시드물소식</a></li>
                 </ul>
-                <!--검색창 영역-->
+                <!--검색창영역-->
                 <div class="search">
                     <form autocomplete="off" onsubmit="return false">
                         <fieldset>
-                            <input type="text" class="searchBox" placeholder="">
+                            <input type="text" class="searchBox" placeholder="검색어를 입력하세요">
                             <button type="submit" class="searchButton"><i class="fas fa-search"></i>
                         </fieldset>
                     </form>
                 </div>
             </nav>
         </div>
-
-
     </header>
 
-   <!---------------------------------------> 
-       
+   <!-----------------contents----------------------------------->    
     <contents>
         <div class="wrap_contents">
             <div class="wrap_buy">
@@ -188,17 +266,43 @@
                             <p>16,900원</p>
                         </div>
                         <div class="count_ship">
-                            <p class="count_ship_p">수량</p>
-                            <div class="count">
-                               <button class="minus">-</button>
-                               <p>1</p>
-                               <button class="plus">+</button>
-                            </div>
-                            <p class="ship_p">배송비</p>
-                            <p class="price_p">2,500원</p>
-                            <hr>
-                            <p class="sum_p">상품 금액 합계</p>
-                            <p class="number_p">16,900원</p>
+                                <div class="input_div">
+                                    <p>수량</p>
+                                        <input type="button" value="-" id="minus" onclick="minus()">
+                                        <input type="text" size="25" value="1" id="count">
+                                        <input type="button" value="+" id="plus" onclick="plus()">
+                                </div>
+                                <p class="ship">배송비 <span>2,500</span></p>
+                                <hr>
+                                <div class="output_div">
+                                    <p class="sum">합계</p>
+                                    <input type="text" value="19,400" id="total_count_view">
+                                </div>
+                               
+                
+                                <script>
+                                var count = 1;
+                                var total_count = 16900;
+                                
+                                function plus(){
+                                    count++;
+                                    result();
+                                }
+                                function minus(){
+                                if (count>1) {
+                                    count--;
+                                }                                   
+                                result();
+                                }
+                                function result(){
+                                    if(count==1){ total_count=19400;}
+                                    total_count_view = total_count * count; 
+                                    document.getElementById("count").value=count;
+                                    document.getElementById("total_count_view").value=total_count_view.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                                }
+
+
+                                </script>
                         </div>
                         <div class="shopping_basket">
                             <button class="shopping_basket_button">장바구니</button>
@@ -496,14 +600,38 @@
                 </div>
             </div>
             
-            <div class="ft3">
-                <img src="images/qr.png">
-            </div>
-
         </div>
         <a href="#" class="topbtn">top</a>
     </footer>
 
+    <div id="popup">
+        <a class="btn open"><img src="images/popup5.png" class="chatbox"></a>
+        <div class="popup">
+            <a class="btn close">close</a>
+            <div class="ps1">
+                <ul>
+                    <li class="check">
+                        <a href="#"><img src="images/출석체크8 1.png" alt="출석체크"></a></li>
+                    <li class="app">
+                        <h5>시드물 APP 다운</h5>
+                        <img src="images/qr.png" alt="QR code">
+                    </li>
+                    <li class="banking">
+                        <a href="#"><img src="images/무통장 1.png" alt="입금자 미확인"></a></li>
+                </ul>
+            </div>
+            <div class="ps2">
+                <div class="sdad">
+                    <!--광고 이미지슬라이드-->
+                    <ul class="slide">
+                        <li><a href="#"><img src="images/left_slide_banner_a01.png"></a></li>
+                        <li><a href="#"><img src="images/left_slide_banner_a02.png"></a></li>
+                        <!-- <li><a href="#"><img src="images/left_slide_banner_a03.png"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
