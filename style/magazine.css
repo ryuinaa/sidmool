@@ -165,7 +165,7 @@
 }
 
 
-@media all and (max-width:1024px) {
+/* @media all and (max-width:1024px) {
     .wrap {
         width: 768px;
     }
@@ -200,4 +200,4 @@
         height: 200px;
         margin-bottom: 10px;
     }
-}
+} */
