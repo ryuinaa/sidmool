@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--favicon영역-->
+    <title>Home>기능별>크림</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/product_detail.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/product_detail.js"></script>
+    <script src="https://kit.fontawesome.com/13d0944c7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <!--aside 슬라이드 메뉴-->
+     <div class="side">
+        <div class="slide_btn">
+            <button id="in-out">
+                <div class="fa-layer">
+                    <!-- <img src="images/menu.png"> -->
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </button>
+            <ul>
+                <!-- <li class="tabopen"></li>
+                <ii class="tabclose"></li> -->
+
+                <li class="sns1"><a href="https://cafe.naver.com/sdmool"></a></li>
+                <li class="sns2"><a href="https://www.facebook.com/sidmool1"></a></li>
+                <li class="sns3"><a href="https://www.instagram.com/sidmool/"></a></li>
+                <li class="sns4"><a href="https://www.youtube.com/user/sidmoolytb"></a></li>
+                <li class="chat"><a href="#"><img src="images/headphones.png"></a></li>
+            </ul>
+        </div>
+        <div class="sidewrap">
+            <div class="sdhd">
+                <!-- <a href="#"> -->
+                <img src="images/top_logo1.png" alt="sidmool">
+                <!-- </a> -->
+            </div>
+            <div class="sdbtn">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">1:1 문의</a></li>
+            </div>
+            <div class="side_cate">
+                <ul class="side_main_cate">
+                    <li><a href="#">제품구매<span>shop</span><b><!--<i class="fas fa-minus"></i>--></b></a>
+                        <ul class="cate">
+                            <li><a href="#">기능별</a></li>
+                            <li><a href="#">피부타입별</a></li>
+                            <li><a href="#">성분별</a></li>
+                            <li><a href="#">녹차 라인</a></li>
+                            <li><a href="#">프로폴리스 라인</a></li>
+                            <li><a href="#">Dr. TROUB</a></li>
+                            <li><a href="#">네츄럴 99</a></li>
+                            <li><a href="#">건강식품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">시드물 소개<span>about</span><b><!--<i class="fas fa-plus"></i>--></b></a>
+                        <ul class="cate">
+                            <li><a href="#">시드물 연혁</a></li>
+                            <li><a href="#">시드물 소개</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티<span>community</span><b><!--<i class="fas fa-plus"></i>--></b></a>
+                        <ul class="cate">
+                            <li><a href="#">멤버십</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">사용후기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sdft">
+                <!--고객센터 전화번호 / 계좌정보 -->
+                <div class="sdft1">
+                    <h3>고객센터<span>cs center</span></h3>
+                    <p>1577-9638</p>
+                </div>
+                <div class="sdft2">
+                    <p>전화 주문 연락처<span>042-716-0228</span></p>
+                    <p>해외 전용 고객센터<span>+82-42-716-0227</span></p>
+                </div>
+                <div class="sdft3">
+                    <p>오전 9:00 ~ 오후 17:00</p> <br />
+                    <P style="padding-left:2px;"> 점심시간 PM 12:00 ~ PM 13:00</P><br />
+                    <p>공휴일, 토요일 휴무</p>
+                </div>
+
+                <div class="sdft4">
+                    <h3>입금계좌<span>bank account</span></h3>
+                    <p><b>국민 </b> 460001-04-214514</p>
+                    <p><b>농협 </b> 355-0002-8749-13</p>
+                    <p><b>하나 </b> 643-910004-62604</p>
+                    <p><b>신한 </b> 100-027-169517</p>
+                    <p><b>우리 </b> 1005-902-241888</p>
+                    <p><b>우체국 </b> 310037-01-011233</p>
+                    <p><b>기업 </b> 143-122078-01-015</p>
+                    <p><b>부산 </b> 101-2047-1354-09 <span>예금주 : (주)시드물</span></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="tnb">
+            <nav>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="gnb">
+            <nav>
+                <div class="top_logo">
+                    <a href="#"><img src="images/top_logo11.png" alt="logo"></a>
+                </div>
+                <ul>
+                    <li class="hover"><a href="#">제품전체보기</a>
+                        <div class="submenu_wrap">
+                            <div class="submenu_wrap_wh">
+                                <div class="menu_left">
+                                    <a href="#">기능별</a>
+                                    <a href="#">성분라인별</a>
+                                    <a href="#">고민별</a>
+                                    <a href="#">내츄럴 99</a>
+                                </div>
+                                <div class="menu_right">
+                                    <div class="m_r_1">
+                                        <a href="#">기초화장</a>
+                                        <a href="#">바디</a>
+                                        <a href="#">헤어</a>
+                                        <a href="#">화장소품</a>
+                                        <a href="#">건강식품</a>
+                                        <a href="#">유아&청소년 추천</a>
+                                        <a href="#">색조</a>
+                                    </div>
+                                    <div class="m_r_2">
+                                        <a href="#">무오일다당류</a>
+                                        <a href="#">알로에</a>
+                                        <a href="#">봉독</a>
+                                        <a href="#">바하</a>
+                                        <a href="#">아하</a>
+                                        <a href="#">녹차(EGCG)</a>
+                                        <a href="#">카렌듈라</a>
+                                        <a href="#">아크바이</a>
+                                        <a href="#">레드큐어</a>
+                                        <a href="#">천연오일</a>
+                                        <a href="#">메가펩타이드</a>
+                                        <a href="#">콜라겐</a>
+                                        <a href="#">호호바</a>
+                                        <a href="#">휴먼올리고</a>
+                                        <a href="#">뷰리즈</a>
+                                        <a href="#">EGF</a>
+                                        <a href="#">프로폴리스</a>
+                                        <a href="#">히아루론산</a>
+                                        <a href="#">세라마이드</a>
+                                        <a href="#">티트리</a>
+                                        <a href="#">아스타잔틴</a>
+                                        <a href="#">사카로발효</a>
+                                        <a href="#">닥터트럽</a>
+                                        <a href="#">병풀(센텔라)</a>
+                                        <a href="#">징크</a>
+                                        <a href="#">동백</a>
+                                        <a href="#">스킨소스</a>
+                                        <a href="#">판테놀</a>
+                                        <a href="#">닥터갈라톡</a>
+                                        <a href="#">달팽이</a>
+                                    </div>
+                                    <div class="m_r_3">
+                                        <a href="#">AC스팟</a>
+                                        <a href="#">바디케어</a>
+                                        <a href="#">모공관리</a>
+                                        <a href="#">피지관리</a>
+                                        <a href="#">장벽강화</a>
+                                        <a href="#">각질관리</a>
+                                        <a href="#">트럽</a>
+                                        <a href="#">악건성</a>
+                                        <a href="#">붉은톤</a>
+                                        <a href="#">미백</a>
+                                        <a href="#">자외선차단</a>
+                                        <a href="#">주름개선&탄력</a>
+                                        <a href="#">속건성(수부지)</a>
+                                        <a href="#">화이트/블랙헤드 관리</a>
+                                        <a href="#">건조&민감피부</a>
+                                        <a href="#">안티옥시</a>
+                                        <a href="#">탈모</a>
+                                        <a href="#">레이저관리</a>
+                                        <a href="#">탄력집중관리</a>
+                                        <a href="#">시카케어</a>
+                                        <a href="#">동물성프리</a>
+                                        <a href="#">미백&주름개선</a>
+                                    </div>
+                                    <div class="m_r_4">
+                                        <a href="#">클렌징</a>
+                                        <a href="#">퍼스트에센스</a>
+                                        <a href="#">스킨토너미스트</a>
+                                        <a href="#">앰플</a>
+                                        <a href="#">에센스세럼</a>
+                                        <a href="#">수분젤로션</a>
+                                        <a href="#">크림</a>
+                                        <a href="#">립&아이</a>
+                                        <a href="#">페이스&바디오일</a>
+                                        <a href="#">마스크팩</a>
+                                        <a href="#">바디&헤어</a>
+                                        <a href="#">자외선차단</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="hover"><a href="#">시드물소개</a></li>
+                    <li class="hover"><a href="#">제품가이드</a></li>
+                    <li class="hover"><a href="#">사용후기</a></li>
+                    <li class="hover"><a href="#">시드물소식</a></li>
+                </ul>
+                <!--검색창 영역-->
+                <div class="search">
+                    <form autocomplete="off" onsubmit="return false">
+                        <fieldset>
+                            <input type="text" class="searchBox" placeholder="검색어를 입력하세요">
+                            <button type="submit" class="searchButton"><i class="fas fa-search"></i>
+                        </fieldset>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!-----------------contents----------------------------------->    
+    <contents>
+        <div class="wrap_contents">
+            <div class="wrap_buy">
+                <div class="home">
+                    <div class="home_icon">
+                        <a href="#"><img src="images/house.png" alt="홈으로"></a>
+                    </div>
+                <p><a href="#">Home</a>><a href="#">기능별</a>><a href="#">크림</a></p> 
+                </div>
+                <div class="goodspot">
+                    <div class="goodspot_img">
+                        <img src="images/구스팟이미지.png" alt="구스팟 이미지">
+                    </div>
+                    <div class="goodspot_purchase">
+                        <div class="goodspot_purchase_name">
+                            <p>시드물 센텔라 구스팟 크림 30ml</p>
+                            <p>16,900원</p>
+                        </div>
+                        <div class="count_ship">
+                                <div class="input_div">
+                                    <p>수량</p>
+                                        <input type="button" value="-" id="minus" onclick="minus()">
+                                        <input type="text" size="25" value="1" id="count">
+                                        <input type="button" value="+" id="plus" onclick="plus()">
+                                </div>
+                                <p class="ship">배송비 <span>2,500</span></p>
+                                <hr>
+                                <div class="output_div">
+                                    <p class="sum">합계</p>
+                                    <input type="text" value="19,400" id="total_count_view">
+                                </div>
+                               
+                
+                                <script>
+                                var count = 1;
+                                var total_count = 16900;
+                                
+                                function plus(){
+                                    count++;
+                                    result();
+                                }
+                                function minus(){
+                                if (count>1) {
+                                    count--;
+                                }                                   
+                                result();
+                                }
+                                function result(){
+                                    if(count==1){ total_count=19400;}
+                                    total_count_view = total_count * count; 
+                                    document.getElementById("count").value=count;
+                                    document.getElementById("total_count_view").value=total_count_view.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                                }
+
+
+                                </script>
+                        </div>
+                        <div class="shopping_basket">
+                            <button class="shopping_basket_button">장바구니</button>
+                            <button class="purchase_button">바로구매</button>
+                            <button class="heart_button"><img src="images/love.png"></button>
+                        </div>
+                    </div>
+                </div>
+            <!--tab -->
+                <div class="menu_tab">
+                    <ul class="tabs">
+                      <li class="tab-link current" data-tab="tab-1">상품 상세 정보</li>
+                      <li class="tab-link" data-tab="tab-2">구매 정보</li>
+                      <li class="tab-link" data-tab="tab-3">후기</li>
+                      <li class="tab-link" data-tab="tab-4">Q&A</li>
+                    </ul>
+                <!--tab1-->
+                    <div id="tab-1" class="tab-content current">
+                        <img src="images/goodspot_img.png" alt="구스팟상세이미지">
+                    </div>
+                <!--tab2-->
+                    <div id="tab-2" class="tab-content">
+                        <div class="purchase_detail">
+                            <p>시드물 구매정보 안내</p>
+                            <table>
+                                <tr>
+                                    <td>배송안내</td>
+                                    <td>배송비: 2만원 이상 무료 배송<br>배송지역: 전국<br>배송업체: 우체국택배(건강주스 제품은 CJ택배 이용)<br>
+                                        배송기간: 월요일-오전 10시, 화~금-낮 1시, 토요일-오전 9시 이전 결제 완료건은 당일 발송(공휴일 제외)<br>
+                                        ※명절이나 공휴일 이후에는 주문량 증가로 평소보다 발송이 1~2일 늦어질 수 있습니다.
+                                        ※해외배송의 경우 무통장 주문서를 넣어주시고 해외배송 게시판에 남겨주시면 됩니다. 상품의 중량 및 배송국가에 따라 배송비가 별도 산정됩니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>교환/반품</td>
+                                    <td>단순 변심에 의한 교환 및 반품인 경우 배송비(무료배송: 5,000원/배송비 지불: 2,500원)<br>
+                                        제품의 하자 및 오배송일 경우(배송비 당사 부담)<br>
+                                        제품을 받으신 후 7일 이내에 반품/교환/취소/환불이 가능하며 미개봉이어야 합니다.<br>
+                                        제품 사용 후 피부 트러블이 발생하여 반품을 하실 경우 피부과 진단서나 1:1게시판에 사진을 첨부해 주시면 접수 후 환불해 드립니다.
+                                        (상품 수령 후 20일 이내) 1577-9638로 연락주세요.</td>
+                                </tr>
+                                <tr>
+                                    <td>시드물 반품 처리 정책</td>
+                                    <td>고객님들께서 항상 새 제품을 받아보실 수 있도록 반품 들어온 제품 중 개봉 제품은 폐기를 하고, 개봉하지 않은 제품은 전량 복지관 후원용으로 보내드리고 있습니다.<br>
+                                    반품 환불 제품은 절대 재판매하지 않습니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>공지사항</td>
+                                    <td>화장품은 의약품이 아닙니다.<br>
+                                        구입 전 전성분을 꼼꼼히 확인해 주시고 알러지 성분이 있으면 사용을 자제해 주세요.<br>
+                                        팔 안쪽이나 턱 부분에 테스트 후 붉어짐이나 가려움 등이 없을 경우 안전하게 사용해 주세요.</td>
+                                </tr>
+                                <tr>
+                                    <td>품질 보증 기준 및 A/S안내</td>
+                                    <td>품질 보증 기준: 공정거래위원회 고시에 의거하여 보상해 드립니다.<br>
+                                    상품의 불량에 의한 반품/교환, A/s, 환불, 품질 보증 및 피해 보상 등에 관한 사항은 소비자 분쟁 해결기준(공정거래위원회고시)에 따라 받으실 수 있습니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>A/S책임자와 전화번호</td>
+                                    <td>(주)시드물: 1577-9638</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                <!--tab3-->
+                    <div id="tab-3" class="tab-content">
+                        <div class="order_review">
+                            <div class="order">
+                                <p><a href="#">베스트순</a></p>   
+                                <p><a href="#">최신순</a></p>
+                            </div>
+                            <div class="review">
+                                <label><input type="checkbox" value="사진리뷰">사진리뷰</label>
+                                <label><input type="checkbox" value="일반리뷰">일반리뷰</label>
+                            </div>
+                        </div>
+                        <div class="review_photo">
+                            <div class="review1">
+                                <a href="#"><img src="images/review1.jpg" alt="review1" class="reviewimage1"></a>
+                            </div>
+                            <div class="review2">
+                                <a href="#"><img src="images/review2.jpg" alt="review2" class="reviewimage2"></a>
+                            </div>
+                            <div class="review3">
+                                <a href="#"><img src="images/review3.jpg" alt="review3" class="reviewimage3"></a>
+                            </div>
+                            <div class="review4">
+                                <a href="#"><img src="images/review4.jpg" alt="review4" class="reviewimage4"></a>
+                            </div>
+                            <div class="review5">
+                                <a href="#"><img src="images/review5.jpg" alt="review5" class="reviewimage5"></a>
+                            </div>
+                            <div class="review6">
+                                <a href="#"><img src="images/review6.jpg" alt="review6" class="reviewimage6"></a>
+                            </div>
+                            <div class="review7">
+                                <a href="#"><img src="images/review7.jpg" alt="review7" class="reviewimage7"></a>
+                                <div class="see">
+                                    <a href="#"><p class="see_text">더보기</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviewtext_wrap">
+                            <div class="review_text1">
+                                <div class="review_number">
+                                    <p>826</p>
+                                </div>
+                                <div class="review_context">
+                                    <a href="#"><p>기능성 앰플 중 효과 최고예요!! 기능성 앰플 중 효과 최고예요!!
+                                        기능성 앰플 중 효과 최고예요!!기능성 앰플 중 효과 최고예요!!</p></a>
+                                </div>
+                                <div class="review_img">
+                                    <a href="#"><img src="images/review1.jpg" alt="review1" class="review_img1"></a>
+                                </div>
+                            </div>
+                            <div class="review_text2">
+                                <div class="review_number">
+                                    <p>825</p>
+                                </div>
+                                <div class="review_context">
+                                    <a href="#"><p>기능성 앰플 중 효과 최고예요!! 기능성 앰플 중 효과 최고예요!!
+                                        기능성 앰플 중 효과 최고예요!!기능성 앰플 중 효과 최고예요!!</p></a>
+                                </div>
+                                <div class="review_img">
+                                    <a href="#"><img src="images/review2.jpg" alt="review2" class="review_img2"></a>
+                                </div>
+                            </div>
+                            <div class="review_text3">
+                                <div class="review_number">
+                                    <p>824</p>
+                                </div>
+                                <div class="review_context">
+                                    <a href="#"><p>기능성 앰플 중 효과 최고예요!! 기능성 앰플 중 효과 최고예요!!
+                                        기능성 앰플 중 효과 최고예요!!기능성 앰플 중 효과 최고예요!!
+                                        기능성 앰플 중 효과 최고예요!! 기능성 앰플 중 효과 최고예요!!
+                                        기능성 앰플 중 효과 최고예요!!기능성 앰플 중 효과 최고예요!!</p></a>
+                                </div>
+                                <div class="review_img">
+                                    <a href="#"><img src="images/review3.jpg" alt="review3" class="review_img3"></a>
+                                </div>
+                            </div>
+                            <div class="review_text4">
+                                <div class="review_number">
+                                    <p>823</p>
+                                </div>
+                                <div class="review_context">
+                                    <a href="#"><p>기능성 앰플 중 효과 최고예요!! 기능성 앰플 중 효과 최고예요!!
+                                        기능성 앰플 중 효과 최고예요!!기능성 앰플 중 효과 최고예요!!</p></a>
+                                </div>
+                                <div class="review_img">
+                                    <a href="#"><img src="images/review4.jpg" alt="review4" class="review_img4"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviewpage_number">
+                            <a href="#"><</a>
+                            <a href="#" class="nowpage">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">></a>            
+                        </div>
+                      </div>
+                <!--tab4-->
+                    <div id="tab-4" class="tab-content">
+                        <div class="qna_wrap">
+                            <div class="qna_text1">
+                                <div class="qna_number">
+                                    <p>826</p>
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>문의드립니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text2">
+                                <div class="qna_number">
+                                    <p>825</p>
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>문의드립니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text3">
+                                <div class="qna_number">
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>└안녕하세요. 시드물입니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text4">
+                                <div class="qna_number">
+                                    <p>824</p>
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>문의드립니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text5">
+                                <div class="qna_number">
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>└안녕하세요. 시드물입니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text6">
+                                <div class="qna_number">
+                                    <p>823</p>
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>문의드립니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text7">
+                                <div class="qna_number">
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>└안녕하세요. 시드물입니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text8">
+                                <div class="qna_number">
+                                    <p>822</p>
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>문의드립니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text9">
+                                <div class="qna_number">
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>└안녕하세요. 시드물입니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text10">
+                                <div class="qna_number">
+                                    <p>821</p>
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>문의드립니다.</p></a>
+                                </div>
+                            </div>
+                            <div class="qna_text11">
+                                <div class="qna_number">
+                                </div>
+                                <div class="qna_context">
+                                    <a href="#"><p>└안녕하세요. 시드물입니다.</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviewpage_number">
+                            <a href="#"><</a>
+                            <a href="#" class="nowpage">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">></a>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--tab 끝-->
+    </contents>
+      
+
+   <footer>
+        <div class="ft_wrap">
+            <div class="ft1">
+                <a href="#"><img src="images/ftlogosample.png"></a>
+            </div>
+            <div class="ft2">
+                <ul class="ft2_top">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+                <div class="ft2_middle">
+                    <p>상호: 주식회사 시드물 주소 : 우)35083 대전광역시 중구 안영로 42 (안영동) 전화 : 1577-9638 (해외 : +82-42-716-0277) 팩스 :
+                        042-367-7989
+                        사업자등록번호 : 305-81-94469 건강기능식품판매업 : 대전 중구 제 503 통신판매업신고번호 : 제2008-대전중구-0247호 화장품제조판매업 등록필증 제
+                        1163호
+                        서비스개선 : help@sidmool.com 대표 : 민중기 개인정보책임자 : 박소진</p>
+                </div>
+                <div class="ft2_bottom">
+                    <p>COPYRIGHT (C) 2008 <a href="#">SIDMOOL</a> ALL RIGHTS RESERVED Hosting by MakeShop</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <a href="#" class="topbtn"><i class="fas fa-chevron-up"></i></a>
+    </footer>
+
+    <div id="popup">
+        <a class="btn open"><img src="images/popup5.png" class="chatbox"></a>
+        <div class="popup">
+            <a class="btn close">close</a>
+            <div class="ps1">
+                <ul>
+                    <li class="check">
+                        <a href="#"><img src="images/출석체크8 1.png" alt="출석체크"></a></li>
+                    <li class="app">
+                        <h5>시드물 APP 다운</h5>
+                        <img src="images/qr.png" alt="QR code">
+                    </li>
+                    <li class="banking">
+                        <a href="#"><img src="images/무통장 1.png" alt="입금자 미확인"></a></li>
+                </ul>
+            </div>
+            <div class="ps2">
+                <div class="sdad">
+                    <!--광고 이미지슬라이드-->
+                    <ul class="slide">
+                        <li><a href="#"><img src="images/left_slide_banner_a01.png"></a></li>
+                        <li><a href="#"><img src="images/left_slide_banner_a02.png"></a></li>
+                        <!-- <li><a href="#"><img src="images/left_slide_banner_a03.png"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
